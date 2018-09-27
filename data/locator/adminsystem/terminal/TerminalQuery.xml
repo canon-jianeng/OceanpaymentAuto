@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 管理后台 终端号管理 -> 查询终端号 -->
+<map>
+	<!-- 左侧导航栏 -->
+	<page pageName="leftside">
+        <!-- 查询终端号 -->
+		<locator type="id" timeOut="5" value="divclick_30">TerminalQuery</locator>
+	</page>
+
+    <!-- 查询页面 -->
+    <page pageName="query">
+		<!-- 终端号 -->
+		<locator type="id" timeOut="5" value="gatewayForm_gwno">Terminal</locator>
+        <!-- 查询按钮 -->
+		<locator type="id" timeOut="5" value="queryBtn">QueryBtn</locator>
+        <!-- 复选框 -->
+        <locator type="id" timeOut="5" value="mids">Mids</locator>
+        <!-- 停用按钮 -->
+        <locator type="xpath" timeOut="5" value="//*[@id='buttonListDiv']/span[5]/a">Stop</locator>
+        <!-- 启用按钮 -->
+        <locator type="xpath" timeOut="5" value="//*[@id='buttonListDiv']/span[4]/a">Start</locator>
+        <!-- 激活按钮 -->
+        <locator type="xpath" timeOut="5" value="//*[@id='buttonListDiv']/span[3]/a">Active</locator>
+	</page>
+
+    <!-- 新增页面 -->
+    <page pageName="create">
+		<!-- 账户  -->
+		<locator type="id" timeOut="5" value="merNo">Account</locator>
+        <!-- secureCode -->
+		<locator type="id" timeOut="5" value="gwMd5key">SecureCode</locator>
+        <!-- 绑定接口类型 -->
+        <locator type="id" timeOut="5" value="gwInfType">InfType</locator>
+        <!-- 行业类型 -->
+        <locator type="id" timeOut="5" value="businessType">BusType</locator>
+        <!-- 返回类型 -->
+        <locator type="id" timeOut="5" value="gwReturnModel">ReturnType</locator>
+        <!-- 提交按钮 -->
+        <locator type="id" timeOut="5" value="btnAdd">SubmitBtn</locator>
+	</page>
+
+</map>

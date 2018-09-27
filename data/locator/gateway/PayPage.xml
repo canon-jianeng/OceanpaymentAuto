@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<map>
+	<!-- 三方支付域名页面
+    /web/securepay, /web/standardpay, /web/fastpay, /web/billingpay, /mobile/standardpay, /web/checkoutpay,
+    /web/billingpaywc, /web/standardpaywc, /web/fastpaywc, /web/fastpaylogo, /web/quickpay, /mobile/standardpaywc,
+    /mobile/quickpay, /web/billingtcpay, /web/billingsecurecheckoutpay, /web/securecheckoutpay,
+    /web/standardpaywcyellow, /mobile/blackpay, /web/blackpay, /web/billingfastpay, /web/chicmepay, /web/innfinspay,
+    /web/redpay, /mobile/billingstandardpaywc, /web/qshavepay, /mobile/motifpay, /mobile/yypay, /mobile/concisepay,
+    /mobile/uubuy, /web/factory, /web/vpay, /mobile/rmpay, /web/rmpay
+    -->
+	<page pageName="paypage">
+		<!--Locator lists -->
+		<locator type="id" timeOut="5" value="card_number">CardNumber</locator>
+		<!-- 下拉框 -->
+		<locator type="id" timeOut="5" value="card_month">ComboboxMonth</locator>
+		<!-- 下拉框 -->
+        <locator type="id" timeOut="5" value="card_year">ComboboxYear</locator>
+        <locator type="id" timeOut="5" value="cvv2">SecureCode</locator>
+        <locator type="id" timeOut="5" value="paybutton">PayNow</locator>
+	</page>
+
+	<!-- 三方支付域名页面
+	/web/starcor, /mobile/starcor
+    -->
+	<page pageName="starcor">
+		<!--Locator lists -->
+		<locator type="id" timeOut="5" value="card_number">CardNumber</locator>
+		<!-- 输入框 -->
+		<locator type="id" timeOut="5" value="card_month">ComboboxMonth</locator>
+		<!-- 输入框 -->
+        <locator type="id" timeOut="5" value="card_year">ComboboxYear</locator>
+        <locator type="id" timeOut="5" value="cvv2">SecureCode</locator>
+        <locator type="id" timeOut="5" value="paybutton">PayNow</locator>
+	</page>
+
+	<!-- 三方支付域名页面
+	/web/billingstandardpay, /web/billingstandardpaypage
+	-->
+	<page pageName="billingstandardpay">
+		<!--Locator lists -->
+		<locator type="id" timeOut="5" value="card_number_hi">CardNumber</locator>
+		<locator type="id" timeOut="5" value="card_month">ComboboxMonth</locator>
+        <locator type="id" timeOut="5" value="card_year">ComboboxYear</locator>
+        <locator type="id" timeOut="5" value="cvv2">SecureCode</locator>
+        <locator type="id" timeOut="5" value="paybutton">PayNow</locator>
+	</page>
+
+	<!-- 三方支付域名页面
+	/web/ncgamepay
+	-->
+	<page pageName="ncgamepay">
+		<!--Locator lists -->
+		<locator type="id" timeOut="5" value="card_number">CardNumber</locator>
+		<locator type="id" timeOut="5" value="card_month">ComboboxMonth</locator>
+        <locator type="id" timeOut="5" value="card_year">ComboboxYear</locator>
+        <locator type="id" timeOut="5" value="cvv2">SecureCode</locator>
+        <locator type="class name" timeOut="5" value="pay-now">Continue</locator>
+	</page>
+
+	<!-- 三方支付域名页面
+	/web/safepay
+	-->
+	<page pageName="safepay">
+		<!--Locator lists -->
+		<locator type="id" timeOut="5" value="card_number">CardNumber</locator>
+		<locator type="id" timeOut="5" value="card_month">ComboboxMonth</locator>
+        <locator type="id" timeOut="5" value="card_year">ComboboxYear</locator>
+        <locator type="id" timeOut="5" value="cvv2">SecureCode</locator>
+        <locator type="xpath" timeOut="5" value="//*[@id='sendFrm']/table/tbody/tr[1]/td[1]/input">PayNow</locator>
+	</page>
+
+	<!-- 三方支付域名页面
+	/web/installmentpay
+	-->
+	<page pageName="installmentpay">
+		<!--Locator lists -->
+		<locator type="id" timeOut="5" value="cpf">CnpjCpf</locator>
+		<locator type="id" timeOut="5" value="card_number">CardNumber</locator>
+        <locator type="id" timeOut="5" value="card_month">ComboboxMonth</locator>
+        <locator type="id" timeOut="5" value="card_year">ComboboxYear</locator>
+        <locator type="id" timeOut="5" value="cvv2">SecureCode</locator>
+		<locator type="id" timeOut="5" value="paybutton">PayNow</locator>
+	</page>
+
+	<!-- 三方支付域名页面
+	/web/multiplepay
+	-->
+	<page pageName="multiplepay">
+		<!--Locator lists -->
+		<locator type="js" timeOut="5" value="document.getElementsByTagName('img')[1].click()">Visa</locator>
+		<locator type="id" timeOut="5" value="card_number">CardNumber</locator>
+        <locator type="id" timeOut="5" value="card_month">ComboboxMonth</locator>
+        <locator type="id" timeOut="5" value="card_year">ComboboxYear</locator>
+        <locator type="id" timeOut="5" value="cvv2">SecureCode</locator>
+		<locator type="id" timeOut="5" value="paybutton">Continue</locator>
+	</page>
+
+	<!-- 三方支付域名页面
+	/web/billingquickpay
+	-->
+	<page pageName="billingquickpay">
+		<!--Locator lists -->
+		<locator type="id" timeOut="5" value="card_number_temp">CardNumber</locator>
+		<locator type="id" timeOut="5" value="card_month">ComboboxMonth</locator>
+        <locator type="id" timeOut="5" value="card_year_temp">ComboboxYear</locator>
+        <locator type="id" timeOut="5" value="cvv2">SecureCode</locator>
+        <locator type="id" timeOut="5" value="paybutton">PayNow</locator>
+	</page>
+
+	<!-- 三方支付域名页面
+	/web/evermarkerpay, /web/popreal
+	-->
+	<page pageName="evermarkerpay">
+		<!--Locator lists -->
+		<locator type="id" timeOut="5" value="card_number">CardNumber</locator>
+		<locator type="id" timeOut="5" value="expiration_data">ExpirationDate</locator>
+        <locator type="id" timeOut="5" value="cvv2">SecureCode</locator>
+        <locator type="id" timeOut="5" value="paybutton">ConfirmPayment</locator>
+	</page>
+
+	<!-- 三方支付域名页面
+	/web/pblsecurepay
+	-->
+	<page pageName="pblsecurepay">
+		<!--Locator lists -->
+		<locator type="class name" timeOut="5" value="icheckbox_flat-green">ConfirmBox</locator>
+		<locator type="id" timeOut="5" value="card_number_temp">CardNumber</locator>
+        <locator type="id" timeOut="5" value="checkout_expiration_date">ExpirationDate</locator>
+        <locator type="id" timeOut="5" value="cvv2">SecureCode</locator>
+        <locator type="id" timeOut="5" value="checkbutton">PayNow</locator>
+	</page>
+
+	<!-- 三方支付域名页面
+	/web/pay, /web/autoradio, /web/securepayment, /web/nadula
+	-->
+	<page pageName="webpay">
+		<!--Locator lists -->
+		<locator type="id" timeOut="5" value="card_number_temp">CardNumber</locator>
+        <locator type="id" timeOut="5" value="checkout_expiration_date">ExpirationDate</locator>
+        <locator type="id" timeOut="5" value="cvv2">SecureCode</locator>
+        <locator type="xpath" timeOut="5" value="//*[@class='step__footer']/button[1]">PayNow</locator>
+	</page>
+
+	<!-- 三方支付域名页面
+	/web/virtualpay
+	-->
+	<page pageName="virtualpay">
+		<!--Locator lists -->
+		<locator type="id" timeOut="5" value="payCpf">CnpjCpf</locator>
+		<locator type="id" timeOut="5" value="card_number">CardNumber</locator>
+        <locator type="id" timeOut="5" value="card_month">ComboboxMonth</locator>
+        <locator type="id" timeOut="5" value="card_year">ComboboxYear</locator>
+        <locator type="id" timeOut="5" value="cvv2">SecureCode</locator>
+		<locator type="xpath" timeOut="5" value="//*[@id='sendFrm']/div[4]/div[5]/input[23]">Continue</locator>
+	</page>
+
+	<!-- 三方支付域名页面
+	/web/brpay
+	-->
+	<page pageName="webbrpay">
+		<!--Locator lists -->
+		<locator type="id" timeOut="5" value="pay_cpf">CnpjCpf</locator>
+		<locator type="id" timeOut="5" value="card_number_temp">CardNumber</locator>
+        <locator type="id" timeOut="5" value="checkout_expiration_date">ExpirationDate</locator>
+        <locator type="id" timeOut="5" value="cvv2">SecureCode</locator>
+		<locator type="xpath" timeOut="5" value="//*[@id='wrap_height']/div/div[4]/div/div[4]/button[1]">PayNow</locator>
+	</page>
+</map>

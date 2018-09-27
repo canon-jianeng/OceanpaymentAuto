@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<map>
+	<!-- 管理后台登录页 -->
+	<page pageName="login">
+		<!-- Locator lists
+		1、selenium.webdriver.common.by
+			type = ["id", "xpath", "link text", "partial link text", "name", "tag name", "class name", "css selector"]
+		2、JavaScript
+			type: "js"
+		-->
+		<!-- 登录名输入框 -->
+		<locator type="id" timeOut="5" value="loginName">LoginName</locator>
+		<!-- 登录密码输入框 -->
+		<locator type="id" timeOut="5" value="loginPass">LoginPass</locator>
+		<!-- 图形验证码 -->
+		<locator type="id" timeOut="5" value="adminForm.randCode">RandCode</locator>
+		<!-- 短信验证码 -->
+		<locator type="id" timeOut="5" value="adminForm.phoneCode">PhoneCode</locator>
+		<!-- 登录按钮 -->
+        <locator type="id" timeOut="5" value="button">LoginBtn</locator>
+	</page>
+
+	<!-- 管理后台首页 -->
+	<page pageName="home">
+        <!-- 一级标签 -->
+		<locator type="xpath" timeOut="5" value="//*[@id='container']/h1/a">MenuOne</locator>
+        <!-- 二级标签 -->
+		<locator type="xpath" timeOut="5" value="//*[@id='container']/div/ul/li">MenuTwo</locator>
+	</page>
+
+	<!-- 公共元素 -->
+    <page pageName="common">
+		<!-- 登录名标签 -->
+        <locator type="xpath" timeOut="1" value="//*[@id='loginFrom']/div/ul/li[1]/span">LoginName</locator>
+        <!-- 账号名称 -->
+        <locator type="xpath" timeOut="5" value="/html/body/div/span[6]/div/span">AccountName</locator>
+        <!-- 退出按钮 -->
+        <locator type="xpath" timeOut="5" value="/html/body/div/span[2]/a">QuitBtn</locator>
+		<!-- 查询按钮 -->
+        <locator type="id" timeOut="5" value="queryBtn">QueryBtn</locator>
+        <!-- 查询按钮 -->
+        <locator type="id" timeOut="5" value="queryBtn">QueryBtn</locator>
+        <!-- 提交按钮 -->
+        <locator type="id" timeOut="5" value="btnAdd">SubmitBtn</locator>
+        <!-- 单(复)选框 -->
+        <locator type="id" timeOut="5" value="mids">Mids</locator>
+        <!-- 显示列表栏 -->
+        <locator type="xpath" timeOut="5" value="//*[@id='dataListTbl']/tbody/tr[1]/td">TableMenu</locator>
+        <!-- 显示列表 -->
+        <locator type="xpath" timeOut="5"
+                 value="//*[@id='dataListTbl']/tbody/tr[@class='line2 odd'][{}]/td[{}]">TableValue</locator>
+    </page>
+</map>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<map>
+    <!-- 对账接口测试页面 -->
+	<page pageName="check">
+		<!--Locator lists -->
+		<locator type="id" timeOut="5" value="suburl">ComboboxAddr</locator>
+		<locator type="id" timeOut="5" value="account">AccountId</locator>
+        <locator type="id" timeOut="5" value="terminal">TerminalId</locator>
+        <locator type="id" timeOut="5" value="secureCode">SecureCode</locator>
+        <locator type="id" timeOut="5" value="order_number">OrderNumber</locator>
+        <locator type="id" timeOut="5" value="btnAdd">Submit</locator>
+	</page>
+
+    <!-- 物流信息上传接口测试页面 -->
+	<page pageName="track">
+		<!--Locator lists -->
+		<locator type="id" timeOut="5" value="suburl">ComboboxAddr</locator>
+		<locator type="id" timeOut="5" value="account">AccountId</locator>
+        <locator type="id" timeOut="5" value="terminal">TerminalId</locator>
+        <locator type="id" timeOut="5" value="secureCode">SecureCode</locator>
+        <locator type="id" timeOut="5" value="payment_id">PayId</locator>
+        <locator type="id" timeOut="5" value="btnAdd">Submit</locator>
+	</page>
+
+    <!-- 退款申请接口测试页面 -->
+	<page pageName="applyrefund">
+		<!--Locator lists -->
+		<locator type="id" timeOut="5" value="suburl">ComboboxAddr</locator>
+		<locator type="id" timeOut="5" value="account">AccountId</locator>
+        <locator type="id" timeOut="5" value="terminal">TerminalId</locator>
+        <locator type="id" timeOut="5" value="secureCode">SecureCode</locator>
+        <locator type="id" timeOut="5" value="payment_id">PayId</locator>
+        <locator type="id" timeOut="5" value="order_amount">OrderAmount</locator>
+        <locator type="id" timeOut="5" value="refund_type">RefundType</locator>
+        <locator type="id" timeOut="5" value="refund_amount">RefundAmount</locator>
+        <locator type="id" timeOut="5" value="btnAdd">Submit</locator>
+	</page>
+
+     <!-- 退款查询接口测试页面 -->
+	<page pageName="queryrefund">
+		<!--Locator lists -->
+		<locator type="id" timeOut="5" value="suburl">ComboboxAddr</locator>
+		<locator type="id" timeOut="5" value="account">AccountId</locator>
+        <locator type="id" timeOut="5" value="terminal">TerminalId</locator>
+        <locator type="id" timeOut="5" value="secureCode">SecureCode</locator>
+        <locator type="id" timeOut="5" value="refund_id">RefundId</locator>
+        <locator type="id" timeOut="5" value="btnAdd">Submit</locator>
+	</page>
+</map>

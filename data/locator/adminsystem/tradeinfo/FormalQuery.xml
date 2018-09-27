@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 管理后台 交易信息管理 -> 正式交易查询 -->
+<map>
+    <!-- 查询页面 -->
+    <page pageName="query">
+		<!-- 支付 ID 文本框 -->
+		<locator type="id" timeOut="5" value="tradeRecordForm.randomOrderno">PayId</locator>
+	</page>
+
+</map>

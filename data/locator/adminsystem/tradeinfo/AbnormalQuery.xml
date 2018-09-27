@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 管理后台 交易信息管理 -> 异常交易查询 -->
+<map>
+    <!-- 查询页面 -->
+    <page pageName="query">
+		<!-- 支付 ID 文本框 -->
+		<locator type="id" timeOut="5" value="unormalTradeRecordForm.randomOrderno">PayId</locator>
+		<!-- 异常类型 -->
+        <locator type="xpath" timeOut="5"
+                 value="//*[@id='queryTable']/tbody/tr[2]/td[4]/div">AbnType</locator>
+        <locator type="xpath" timeOut="5"
+                 value="//*[@id='queryTable']/tbody/tr[2]/td[4]/div/span/div/div[2]/div/div/label/span">AbnItem</locator>
+        <!-- 审核按钮 -->
+        <locator type="xpath" timeOut="5" value="//*[@id='buttonListDiv']/span[10]/a">Review</locator>
+        <!-- 复核按钮 -->
+        <locator type="xpath" timeOut="5" value="//*[@id='buttonListDiv']/span[9]/a">Verify</locator>
+	</page>
+
+    <!-- 审核页面 -->
+	<page pageName="review">
+        <!-- 审核状态 -->
+		<locator type="name" timeOut="5" value="unormalTradeRecordForm.checkStatus">CheckStatus</locator>
+	</page>
+
+    <!-- 复核页面 -->
+	<page pageName="verify">
+        <!-- 复核状态 -->
+		<locator type="name" timeOut="5" value="unormalTradeRecordForm.checkAgainStatus">checkAgainStatus</locator>
+	</page>
+
+</map>

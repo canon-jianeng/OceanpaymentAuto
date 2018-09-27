@@ -1,0 +1,455 @@
+'2018-09-27 05:42:05 PM' - AutoTest - INFO - test case path: E:\PythonCase\Oceanpayment\testcase/newmerchant
+'2018-09-27 05:43:50 PM' - AutoTest - INFO - report path: E:\PythonCase\Oceanpayment\report\TestResult.html
+'2018-09-27 05:43:50 PM' - AutoTest - INFO - ----- 开始执行测试用例 -----
+'2018-09-27 05:43:54 PM' - AutoTest - INFO - ----- 启动浏览器 -----
+'2018-09-27 05:43:55 PM' - AutoTest - INFO - 登录支付网关-首页
+'2018-09-27 05:43:58 PM' - AutoTest - INFO - 点击 '3方信用卡' 链接
+'2018-09-27 05:43:58 PM' - AutoTest - INFO - ----- 页面标题: 三方支付测试 -----
+'2018-09-27 05:43:58 PM' - AutoTest - INFO - 选择提交地址: https://pg.oceanpayment.com/gateway/service
+'2018-09-27 05:43:58 PM' - AutoTest - INFO - 输入帐号ID: 160135
+'2018-09-27 05:43:58 PM' - AutoTest - INFO - 输入终端ID: 16013501
+'2018-09-27 05:43:58 PM' - AutoTest - INFO - 输入交易币种: USD
+'2018-09-27 05:43:58 PM' - AutoTest - INFO - 输入交易金额: 10
+'2018-09-27 05:43:58 PM' - AutoTest - INFO - 点击 make payment
+'2018-09-27 05:43:59 PM' - AutoTest - INFO - ----- 页面链接: https://pg.oceanpayment.com/paymentpages/web/securepay.html;jsessionid=C0AC6BD3483CDB8C29A06FEB7D0941F4 -----
+'2018-09-27 05:43:59 PM' - AutoTest - INFO - 输入 Card Number: 4929600002000005
+'2018-09-27 05:43:59 PM' - AutoTest - INFO - 4929600002000005
+'2018-09-27 05:43:59 PM' - AutoTest - INFO - 选择年月
+'2018-09-27 05:43:59 PM' - AutoTest - INFO - 输入 Secure Code
+'2018-09-27 05:43:59 PM' - AutoTest - INFO - 111
+'2018-09-27 05:43:59 PM' - AutoTest - INFO - 点击 PAY NOW
+'2018-09-27 05:44:01 PM' - AutoTest - INFO - canon
+'2018-09-27 05:44:01 PM' - AutoTest - INFO - Neng2018
+'2018-09-27 05:44:01 PM' - AutoTest - INFO - 
+'2018-09-27 05:44:01 PM' - AutoTest - INFO - 111111
+'2018-09-27 05:44:02 PM' - AutoTest - INFO - canon 登录管理后台
+'2018-09-27 05:44:03 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易申请
+'2018-09-27 05:44:03 PM' - AutoTest - INFO - 180927174358008013508
+'2018-09-27 05:44:08 PM' - AutoTest - INFO - 10
+'2018-09-27 05:44:08 PM' - AutoTest - INFO - 1
+'2018-09-27 05:44:08 PM' - AutoTest - INFO - autotest
+'2018-09-27 05:44:09 PM' - AutoTest - INFO - 申请调单
+'2018-09-27 05:44:10 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易查询
+'2018-09-27 05:44:10 PM' - AutoTest - INFO - 180927174358008013508
+'2018-09-27 05:44:12 PM' - AutoTest - INFO - 查询支付ID和异常类型:调单
+'2018-09-27 05:44:15 PM' - AutoTest - INFO - 异常交易查询 - 审核
+'2018-09-27 05:44:16 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易查询
+'2018-09-27 05:44:16 PM' - AutoTest - INFO - 180927174358008013508
+'2018-09-27 05:44:17 PM' - AutoTest - INFO - 查询支付ID和异常类型:调单
+'2018-09-27 05:44:18 PM' - AutoTest - INFO - 审核状态: //*[@id='dataListTbl']/tbody/tr[@class='line2 odd'][1]/td[12]
+'2018-09-27 05:44:20 PM' - AutoTest - INFO - 确认要退出吗?
+'2018-09-27 05:44:20 PM' - AutoTest - INFO - canon1
+'2018-09-27 05:44:20 PM' - AutoTest - INFO - Neng2018
+'2018-09-27 05:44:20 PM' - AutoTest - INFO - 
+'2018-09-27 05:44:20 PM' - AutoTest - INFO - 111111
+'2018-09-27 05:44:21 PM' - AutoTest - INFO - canon1 登录管理后台
+'2018-09-27 05:44:22 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易申请
+'2018-09-27 05:44:23 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易查询
+'2018-09-27 05:44:23 PM' - AutoTest - INFO - 180927174358008013508
+'2018-09-27 05:44:25 PM' - AutoTest - INFO - 查询支付ID和异常类型:调单
+'2018-09-27 05:44:27 PM' - AutoTest - INFO - 异常交易查询 - 复核
+'2018-09-27 05:44:28 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易查询
+'2018-09-27 05:44:28 PM' - AutoTest - INFO - 180927174358008013508
+'2018-09-27 05:44:29 PM' - AutoTest - INFO - 查询支付ID和异常类型:调单
+'2018-09-27 05:44:30 PM' - AutoTest - INFO - 审核状态: //*[@id='dataListTbl']/tbody/tr[@class='line2 odd'][1]/td[12]
+'2018-09-27 05:44:31 PM' - AutoTest - INFO - 160135
+'2018-09-27 05:44:31 PM' - AutoTest - INFO - autotest
+'2018-09-27 05:44:31 PM' - AutoTest - INFO - admin123
+'2018-09-27 05:44:31 PM' - AutoTest - INFO - 
+'2018-09-27 05:44:32 PM' - AutoTest - INFO - 登录账户后台
+'2018-09-27 05:44:34 PM' - AutoTest - INFO - 进入问题管理 - 调单处理
+'2018-09-27 05:44:34 PM' - AutoTest - INFO - 180927174358008013508
+'2018-09-27 05:44:34 PM' - AutoTest - INFO - 查询支付ID
+'2018-09-27 05:44:35 PM' - AutoTest - INFO - 接受退款
+'2018-09-27 05:44:37 PM' - AutoTest - INFO - 确认要退出吗?
+'2018-09-27 05:44:37 PM' - AutoTest - INFO - canon
+'2018-09-27 05:44:38 PM' - AutoTest - INFO - Neng2018
+'2018-09-27 05:44:38 PM' - AutoTest - INFO - 
+'2018-09-27 05:44:38 PM' - AutoTest - INFO - 111111
+'2018-09-27 05:44:39 PM' - AutoTest - INFO - canon 登录管理后台
+'2018-09-27 05:44:40 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易查询
+'2018-09-27 05:44:40 PM' - AutoTest - INFO - 180927174358008013508
+'2018-09-27 05:44:42 PM' - AutoTest - INFO - 查询支付ID和异常类型:退款
+'2018-09-27 05:44:42 PM' - AutoTest - INFO - 异常原因: //*[@id='dataListTbl']/tbody/tr[@class='line2 odd'][1]/td[11]
+'2018-09-27 05:44:44 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易查询
+'2018-09-27 05:44:44 PM' - AutoTest - INFO - 180927174358008013508
+'2018-09-27 05:44:45 PM' - AutoTest - INFO - 查询支付ID和异常类型:调单取消
+'2018-09-27 05:44:46 PM' - AutoTest - INFO - 异常原因: //*[@id='dataListTbl']/tbody/tr[@class='line2 odd'][1]/td[11]
+'2018-09-27 05:44:46 PM' - AutoTest - INFO - ----- 关闭浏览器 -----
+'2018-09-27 05:44:53 PM' - AutoTest - INFO - ----- 启动浏览器 -----
+'2018-09-27 05:44:54 PM' - AutoTest - INFO - 登录支付网关-首页
+'2018-09-27 05:44:56 PM' - AutoTest - INFO - 点击 '3方信用卡' 链接
+'2018-09-27 05:44:56 PM' - AutoTest - INFO - ----- 页面标题: 三方支付测试 -----
+'2018-09-27 05:44:56 PM' - AutoTest - INFO - 选择提交地址: https://pg.oceanpayment.com/gateway/service
+'2018-09-27 05:44:56 PM' - AutoTest - INFO - 输入帐号ID: 160135
+'2018-09-27 05:44:56 PM' - AutoTest - INFO - 输入终端ID: 16013501
+'2018-09-27 05:44:56 PM' - AutoTest - INFO - 输入交易币种: USD
+'2018-09-27 05:44:56 PM' - AutoTest - INFO - 输入交易金额: 10
+'2018-09-27 05:44:56 PM' - AutoTest - INFO - 点击 make payment
+'2018-09-27 05:44:56 PM' - AutoTest - INFO - ----- 页面链接: https://pg.oceanpayment.com/paymentpages/web/securepay.html;jsessionid=91FF5E48F690567474FD86BB1081AAB8 -----
+'2018-09-27 05:44:56 PM' - AutoTest - INFO - 输入 Card Number: 4929600002000005
+'2018-09-27 05:44:56 PM' - AutoTest - INFO - 4929600002000005
+'2018-09-27 05:44:57 PM' - AutoTest - INFO - 选择年月
+'2018-09-27 05:44:57 PM' - AutoTest - INFO - 输入 Secure Code
+'2018-09-27 05:44:57 PM' - AutoTest - INFO - 111
+'2018-09-27 05:44:57 PM' - AutoTest - INFO - 点击 PAY NOW
+'2018-09-27 05:44:58 PM' - AutoTest - INFO - canon
+'2018-09-27 05:44:58 PM' - AutoTest - INFO - Neng2018
+'2018-09-27 05:44:58 PM' - AutoTest - INFO - 
+'2018-09-27 05:44:58 PM' - AutoTest - INFO - 111111
+'2018-09-27 05:44:59 PM' - AutoTest - INFO - canon 登录管理后台
+'2018-09-27 05:45:00 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易申请
+'2018-09-27 05:45:00 PM' - AutoTest - INFO - 180927174456008013550
+'2018-09-27 05:45:04 PM' - AutoTest - INFO - 10
+'2018-09-27 05:45:04 PM' - AutoTest - INFO - 1
+'2018-09-27 05:45:04 PM' - AutoTest - INFO - 申请拒付
+'2018-09-27 05:45:06 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易查询
+'2018-09-27 05:45:06 PM' - AutoTest - INFO - 180927174456008013550
+'2018-09-27 05:45:07 PM' - AutoTest - INFO - 查询支付ID和异常类型:拒付
+'2018-09-27 05:45:08 PM' - AutoTest - INFO - 异常交易查询 - 审核
+'2018-09-27 05:45:10 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易查询
+'2018-09-27 05:45:10 PM' - AutoTest - INFO - 180927174456008013550
+'2018-09-27 05:45:11 PM' - AutoTest - INFO - 查询支付ID和异常类型:拒付
+'2018-09-27 05:45:12 PM' - AutoTest - INFO - 审核状态: //*[@id='dataListTbl']/tbody/tr[@class='line2 odd'][1]/td[12]
+'2018-09-27 05:45:13 PM' - AutoTest - INFO - 确认要退出吗?
+'2018-09-27 05:45:13 PM' - AutoTest - INFO - canon1
+'2018-09-27 05:45:13 PM' - AutoTest - INFO - Neng2018
+'2018-09-27 05:45:14 PM' - AutoTest - INFO - 
+'2018-09-27 05:45:14 PM' - AutoTest - INFO - 111111
+'2018-09-27 05:45:14 PM' - AutoTest - INFO - canon1 登录管理后台
+'2018-09-27 05:45:16 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易申请
+'2018-09-27 05:45:17 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易查询
+'2018-09-27 05:45:17 PM' - AutoTest - INFO - 180927174456008013550
+'2018-09-27 05:45:18 PM' - AutoTest - INFO - 查询支付ID和异常类型:拒付
+'2018-09-27 05:45:20 PM' - AutoTest - INFO - 异常交易查询 - 复核
+'2018-09-27 05:45:21 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易查询
+'2018-09-27 05:45:21 PM' - AutoTest - INFO - 180927174456008013550
+'2018-09-27 05:45:23 PM' - AutoTest - INFO - 查询支付ID和异常类型:拒付
+'2018-09-27 05:45:23 PM' - AutoTest - INFO - 审核状态: //*[@id='dataListTbl']/tbody/tr[@class='line2 odd'][1]/td[12]
+'2018-09-27 05:45:24 PM' - AutoTest - INFO - 160135
+'2018-09-27 05:45:24 PM' - AutoTest - INFO - autotest
+'2018-09-27 05:45:24 PM' - AutoTest - INFO - admin123
+'2018-09-27 05:45:24 PM' - AutoTest - INFO - 
+'2018-09-27 05:45:25 PM' - AutoTest - INFO - 登录账户后台
+'2018-09-27 05:45:27 PM' - AutoTest - INFO - 进入问题管理 - 拒付处理
+'2018-09-27 05:45:27 PM' - AutoTest - INFO - 180927174456008013550
+'2018-09-27 05:45:30 PM' - AutoTest - INFO - 查询支付ID
+'2018-09-27 05:45:31 PM' - AutoTest - INFO - 发起申诉
+'2018-09-27 05:45:32 PM' - AutoTest - INFO - 确认要退出吗?
+'2018-09-27 05:45:32 PM' - AutoTest - INFO - canon
+'2018-09-27 05:45:33 PM' - AutoTest - INFO - Neng2018
+'2018-09-27 05:45:33 PM' - AutoTest - INFO - 
+'2018-09-27 05:45:33 PM' - AutoTest - INFO - 111111
+'2018-09-27 05:45:34 PM' - AutoTest - INFO - canon 登录管理后台
+'2018-09-27 05:45:35 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易查询
+'2018-09-27 05:45:35 PM' - AutoTest - INFO - 180927174456008013550
+'2018-09-27 05:45:36 PM' - AutoTest - INFO - 查询支付ID和异常类型:申诉中
+'2018-09-27 05:45:38 PM' - AutoTest - INFO - 异常交易查询 - 审核
+'2018-09-27 05:45:39 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易查询
+'2018-09-27 05:45:39 PM' - AutoTest - INFO - 180927174456008013550
+'2018-09-27 05:45:41 PM' - AutoTest - INFO - 查询支付ID和异常类型:申诉中
+'2018-09-27 05:45:41 PM' - AutoTest - INFO - 审核状态: //*[@id='dataListTbl']/tbody/tr[@class='line2 odd'][1]/td[12]
+'2018-09-27 05:45:43 PM' - AutoTest - INFO - 确认要退出吗?
+'2018-09-27 05:45:43 PM' - AutoTest - INFO - canon1
+'2018-09-27 05:45:43 PM' - AutoTest - INFO - Neng2018
+'2018-09-27 05:45:43 PM' - AutoTest - INFO - 
+'2018-09-27 05:45:44 PM' - AutoTest - INFO - 111111
+'2018-09-27 05:45:44 PM' - AutoTest - INFO - canon1 登录管理后台
+'2018-09-27 05:45:45 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易申请
+'2018-09-27 05:45:47 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易查询
+'2018-09-27 05:45:47 PM' - AutoTest - INFO - 180927174456008013550
+'2018-09-27 05:45:48 PM' - AutoTest - INFO - 查询支付ID和异常类型:申诉中
+'2018-09-27 05:45:50 PM' - AutoTest - INFO - 异常交易查询 - 复核
+'2018-09-27 05:45:51 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易查询
+'2018-09-27 05:45:51 PM' - AutoTest - INFO - 180927174456008013550
+'2018-09-27 05:45:52 PM' - AutoTest - INFO - 查询支付ID和异常类型:申诉中
+'2018-09-27 05:45:53 PM' - AutoTest - INFO - 审核状态: //*[@id='dataListTbl']/tbody/tr[@class='line2 odd'][1]/td[12]
+'2018-09-27 05:45:54 PM' - AutoTest - INFO - 登录账户后台
+'2018-09-27 05:45:55 PM' - AutoTest - INFO - 进入问题管理 - 拒付处理
+'2018-09-27 05:45:55 PM' - AutoTest - INFO - 180927174456008013550
+'2018-09-27 05:45:57 PM' - AutoTest - INFO - 查询支付ID
+'2018-09-27 05:45:57 PM' - AutoTest - INFO - RGB 十六进制值: #03b64f
+'2018-09-27 05:45:58 PM' - AutoTest - INFO - 确认要退出吗?
+'2018-09-27 05:45:58 PM' - AutoTest - INFO - canon
+'2018-09-27 05:45:58 PM' - AutoTest - INFO - Neng2018
+'2018-09-27 05:45:59 PM' - AutoTest - INFO - 
+'2018-09-27 05:45:59 PM' - AutoTest - INFO - 111111
+'2018-09-27 05:45:59 PM' - AutoTest - INFO - canon 登录管理后台
+'2018-09-27 05:46:01 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易申请
+'2018-09-27 05:46:01 PM' - AutoTest - INFO - 180927174456008013550
+'2018-09-27 05:46:04 PM' - AutoTest - INFO - 申请申诉成功
+'2018-09-27 05:46:05 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易查询
+'2018-09-27 05:46:05 PM' - AutoTest - INFO - 180927174456008013550
+'2018-09-27 05:46:06 PM' - AutoTest - INFO - 查询支付ID和异常类型:申诉成功
+'2018-09-27 05:46:08 PM' - AutoTest - INFO - 异常交易查询 - 审核
+'2018-09-27 05:46:09 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易查询
+'2018-09-27 05:46:09 PM' - AutoTest - INFO - 180927174456008013550
+'2018-09-27 05:46:10 PM' - AutoTest - INFO - 查询支付ID和异常类型:申诉成功
+'2018-09-27 05:46:11 PM' - AutoTest - INFO - 审核状态: //*[@id='dataListTbl']/tbody/tr[@class='line2 odd'][1]/td[12]
+'2018-09-27 05:46:13 PM' - AutoTest - INFO - 确认要退出吗?
+'2018-09-27 05:46:13 PM' - AutoTest - INFO - canon1
+'2018-09-27 05:46:13 PM' - AutoTest - INFO - Neng2018
+'2018-09-27 05:46:13 PM' - AutoTest - INFO - 
+'2018-09-27 05:46:13 PM' - AutoTest - INFO - 111111
+'2018-09-27 05:46:14 PM' - AutoTest - INFO - canon1 登录管理后台
+'2018-09-27 05:46:15 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易申请
+'2018-09-27 05:46:17 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易查询
+'2018-09-27 05:46:17 PM' - AutoTest - INFO - 180927174456008013550
+'2018-09-27 05:46:18 PM' - AutoTest - INFO - 查询支付ID和异常类型:申诉成功
+'2018-09-27 05:46:20 PM' - AutoTest - INFO - 异常交易查询 - 复核
+'2018-09-27 05:46:21 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易查询
+'2018-09-27 05:46:21 PM' - AutoTest - INFO - 180927174456008013550
+'2018-09-27 05:46:22 PM' - AutoTest - INFO - 查询支付ID和异常类型:申诉成功
+'2018-09-27 05:46:23 PM' - AutoTest - INFO - 审核状态: //*[@id='dataListTbl']/tbody/tr[@class='line2 odd'][1]/td[12]
+'2018-09-27 05:46:24 PM' - AutoTest - INFO - 登录账户后台
+'2018-09-27 05:46:25 PM' - AutoTest - INFO - 进入问题管理 - 拒付处理
+'2018-09-27 05:46:25 PM' - AutoTest - INFO - 180927174456008013550
+'2018-09-27 05:46:27 PM' - AutoTest - INFO - 查询支付ID
+'2018-09-27 05:46:27 PM' - AutoTest - INFO - RGB 十六进制值: #03b64f
+'2018-09-27 05:46:27 PM' - AutoTest - INFO - 登录支付网关-首页
+'2018-09-27 05:46:27 PM' - AutoTest - INFO - 点击 '3方信用卡' 链接
+'2018-09-27 05:46:27 PM' - AutoTest - INFO - ----- 页面标题: 三方支付测试 -----
+'2018-09-27 05:46:27 PM' - AutoTest - INFO - 选择提交地址: https://pg.oceanpayment.com/gateway/service
+'2018-09-27 05:46:27 PM' - AutoTest - INFO - 输入帐号ID: 160135
+'2018-09-27 05:46:27 PM' - AutoTest - INFO - 输入终端ID: 16013501
+'2018-09-27 05:46:27 PM' - AutoTest - INFO - 输入交易币种: USD
+'2018-09-27 05:46:27 PM' - AutoTest - INFO - 输入交易金额: 10
+'2018-09-27 05:46:27 PM' - AutoTest - INFO - 点击 make payment
+'2018-09-27 05:46:28 PM' - AutoTest - INFO - ----- 页面链接: https://pg.oceanpayment.com/paymentpages/web/securepay.html -----
+'2018-09-27 05:46:28 PM' - AutoTest - INFO - 输入 Card Number: 4929600002000005
+'2018-09-27 05:46:28 PM' - AutoTest - INFO - 4929600002000005
+'2018-09-27 05:46:28 PM' - AutoTest - INFO - 选择年月
+'2018-09-27 05:46:28 PM' - AutoTest - INFO - 输入 Secure Code
+'2018-09-27 05:46:28 PM' - AutoTest - INFO - 111
+'2018-09-27 05:46:28 PM' - AutoTest - INFO - 点击 PAY NOW
+'2018-09-27 05:46:31 PM' - AutoTest - INFO - 确认要退出吗?
+'2018-09-27 05:46:31 PM' - AutoTest - INFO - canon
+'2018-09-27 05:46:31 PM' - AutoTest - INFO - Neng2018
+'2018-09-27 05:46:31 PM' - AutoTest - INFO - 
+'2018-09-27 05:46:32 PM' - AutoTest - INFO - 111111
+'2018-09-27 05:46:32 PM' - AutoTest - INFO - canon 登录管理后台
+'2018-09-27 05:46:34 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易申请
+'2018-09-27 05:46:34 PM' - AutoTest - INFO - 180927174627360013554
+'2018-09-27 05:46:36 PM' - AutoTest - INFO - 10
+'2018-09-27 05:46:37 PM' - AutoTest - INFO - 1
+'2018-09-27 05:46:37 PM' - AutoTest - INFO - 申请拒付
+'2018-09-27 05:46:38 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易查询
+'2018-09-27 05:46:38 PM' - AutoTest - INFO - 180927174627360013554
+'2018-09-27 05:46:40 PM' - AutoTest - INFO - 查询支付ID和异常类型:拒付
+'2018-09-27 05:46:41 PM' - AutoTest - INFO - 异常交易查询 - 审核
+'2018-09-27 05:46:42 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易查询
+'2018-09-27 05:46:42 PM' - AutoTest - INFO - 180927174627360013554
+'2018-09-27 05:46:44 PM' - AutoTest - INFO - 查询支付ID和异常类型:拒付
+'2018-09-27 05:46:44 PM' - AutoTest - INFO - 审核状态: //*[@id='dataListTbl']/tbody/tr[@class='line2 odd'][1]/td[12]
+'2018-09-27 05:46:46 PM' - AutoTest - INFO - 确认要退出吗?
+'2018-09-27 05:46:46 PM' - AutoTest - INFO - canon1
+'2018-09-27 05:46:46 PM' - AutoTest - INFO - Neng2018
+'2018-09-27 05:46:46 PM' - AutoTest - INFO - 
+'2018-09-27 05:46:47 PM' - AutoTest - INFO - 111111
+'2018-09-27 05:46:47 PM' - AutoTest - INFO - canon1 登录管理后台
+'2018-09-27 05:46:48 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易申请
+'2018-09-27 05:46:50 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易查询
+'2018-09-27 05:46:50 PM' - AutoTest - INFO - 180927174627360013554
+'2018-09-27 05:46:51 PM' - AutoTest - INFO - 查询支付ID和异常类型:拒付
+'2018-09-27 05:46:52 PM' - AutoTest - INFO - 异常交易查询 - 复核
+'2018-09-27 05:46:54 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易查询
+'2018-09-27 05:46:54 PM' - AutoTest - INFO - 180927174627360013554
+'2018-09-27 05:46:55 PM' - AutoTest - INFO - 查询支付ID和异常类型:拒付
+'2018-09-27 05:46:56 PM' - AutoTest - INFO - 审核状态: //*[@id='dataListTbl']/tbody/tr[@class='line2 odd'][1]/td[12]
+'2018-09-27 05:46:57 PM' - AutoTest - INFO - 登录账户后台
+'2018-09-27 05:46:58 PM' - AutoTest - INFO - 进入问题管理 - 拒付处理
+'2018-09-27 05:46:58 PM' - AutoTest - INFO - 180927174627360013554
+'2018-09-27 05:46:59 PM' - AutoTest - INFO - 查询支付ID
+'2018-09-27 05:47:01 PM' - AutoTest - INFO - 上传文件路径:E:\PythonCase\Oceanpayment\data\attach\test.txt
+'2018-09-27 05:47:03 PM' - AutoTest - INFO - 发起申诉
+'2018-09-27 05:47:05 PM' - AutoTest - INFO - 确认要退出吗?
+'2018-09-27 05:47:05 PM' - AutoTest - INFO - canon
+'2018-09-27 05:47:05 PM' - AutoTest - INFO - Neng2018
+'2018-09-27 05:47:05 PM' - AutoTest - INFO - 
+'2018-09-27 05:47:06 PM' - AutoTest - INFO - 111111
+'2018-09-27 05:47:06 PM' - AutoTest - INFO - canon 登录管理后台
+'2018-09-27 05:47:08 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易查询
+'2018-09-27 05:47:08 PM' - AutoTest - INFO - 180927174627360013554
+'2018-09-27 05:47:09 PM' - AutoTest - INFO - 查询支付ID和异常类型:申诉中
+'2018-09-27 05:47:10 PM' - AutoTest - INFO - 异常交易查询 - 审核
+'2018-09-27 05:47:12 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易查询
+'2018-09-27 05:47:12 PM' - AutoTest - INFO - 180927174627360013554
+'2018-09-27 05:47:13 PM' - AutoTest - INFO - 查询支付ID和异常类型:申诉中
+'2018-09-27 05:47:13 PM' - AutoTest - INFO - 审核状态: //*[@id='dataListTbl']/tbody/tr[@class='line2 odd'][1]/td[12]
+'2018-09-27 05:47:15 PM' - AutoTest - INFO - 确认要退出吗?
+'2018-09-27 05:47:15 PM' - AutoTest - INFO - canon1
+'2018-09-27 05:47:15 PM' - AutoTest - INFO - Neng2018
+'2018-09-27 05:47:15 PM' - AutoTest - INFO - 
+'2018-09-27 05:47:16 PM' - AutoTest - INFO - 111111
+'2018-09-27 05:47:16 PM' - AutoTest - INFO - canon1 登录管理后台
+'2018-09-27 05:47:17 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易申请
+'2018-09-27 05:47:19 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易查询
+'2018-09-27 05:47:19 PM' - AutoTest - INFO - 180927174627360013554
+'2018-09-27 05:47:20 PM' - AutoTest - INFO - 查询支付ID和异常类型:申诉中
+'2018-09-27 05:47:22 PM' - AutoTest - INFO - 异常交易查询 - 复核
+'2018-09-27 05:47:23 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易查询
+'2018-09-27 05:47:23 PM' - AutoTest - INFO - 180927174627360013554
+'2018-09-27 05:47:24 PM' - AutoTest - INFO - 查询支付ID和异常类型:申诉中
+'2018-09-27 05:47:25 PM' - AutoTest - INFO - 审核状态: //*[@id='dataListTbl']/tbody/tr[@class='line2 odd'][1]/td[12]
+'2018-09-27 05:47:25 PM' - AutoTest - INFO - 登录账户后台
+'2018-09-27 05:47:26 PM' - AutoTest - INFO - 进入问题管理 - 拒付处理
+'2018-09-27 05:47:26 PM' - AutoTest - INFO - 180927174627360013554
+'2018-09-27 05:47:28 PM' - AutoTest - INFO - 查询支付ID
+'2018-09-27 05:47:28 PM' - AutoTest - INFO - RGB 十六进制值: #03b64f
+'2018-09-27 05:47:29 PM' - AutoTest - INFO - 确认要退出吗?
+'2018-09-27 05:47:29 PM' - AutoTest - INFO - canon
+'2018-09-27 05:47:30 PM' - AutoTest - INFO - Neng2018
+'2018-09-27 05:47:30 PM' - AutoTest - INFO - 
+'2018-09-27 05:47:30 PM' - AutoTest - INFO - 111111
+'2018-09-27 05:47:30 PM' - AutoTest - INFO - canon 登录管理后台
+'2018-09-27 05:47:32 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易申请
+'2018-09-27 05:47:32 PM' - AutoTest - INFO - 180927174627360013554
+'2018-09-27 05:47:35 PM' - AutoTest - INFO - 申请申诉成功
+'2018-09-27 05:47:36 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易查询
+'2018-09-27 05:47:36 PM' - AutoTest - INFO - 180927174627360013554
+'2018-09-27 05:47:38 PM' - AutoTest - INFO - 查询支付ID和异常类型:申诉成功
+'2018-09-27 05:47:39 PM' - AutoTest - INFO - 异常交易查询 - 审核
+'2018-09-27 05:47:41 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易查询
+'2018-09-27 05:47:41 PM' - AutoTest - INFO - 180927174627360013554
+'2018-09-27 05:47:42 PM' - AutoTest - INFO - 查询支付ID和异常类型:申诉成功
+'2018-09-27 05:47:43 PM' - AutoTest - INFO - 审核状态: //*[@id='dataListTbl']/tbody/tr[@class='line2 odd'][1]/td[12]
+'2018-09-27 05:47:44 PM' - AutoTest - INFO - 确认要退出吗?
+'2018-09-27 05:47:44 PM' - AutoTest - INFO - canon1
+'2018-09-27 05:47:45 PM' - AutoTest - INFO - Neng2018
+'2018-09-27 05:47:45 PM' - AutoTest - INFO - 
+'2018-09-27 05:47:45 PM' - AutoTest - INFO - 111111
+'2018-09-27 05:47:46 PM' - AutoTest - INFO - canon1 登录管理后台
+'2018-09-27 05:47:47 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易申请
+'2018-09-27 05:47:48 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易查询
+'2018-09-27 05:47:48 PM' - AutoTest - INFO - 180927174627360013554
+'2018-09-27 05:47:50 PM' - AutoTest - INFO - 查询支付ID和异常类型:申诉成功
+'2018-09-27 05:47:51 PM' - AutoTest - INFO - 异常交易查询 - 复核
+'2018-09-27 05:47:52 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易查询
+'2018-09-27 05:47:52 PM' - AutoTest - INFO - 180927174627360013554
+'2018-09-27 05:47:53 PM' - AutoTest - INFO - 查询支付ID和异常类型:申诉成功
+'2018-09-27 05:47:54 PM' - AutoTest - INFO - 审核状态: //*[@id='dataListTbl']/tbody/tr[@class='line2 odd'][1]/td[12]
+'2018-09-27 05:47:55 PM' - AutoTest - INFO - 登录账户后台
+'2018-09-27 05:47:56 PM' - AutoTest - INFO - 进入问题管理 - 拒付处理
+'2018-09-27 05:47:56 PM' - AutoTest - INFO - 180927174627360013554
+'2018-09-27 05:47:58 PM' - AutoTest - INFO - 查询支付ID
+'2018-09-27 05:47:58 PM' - AutoTest - INFO - RGB 十六进制值: #03b64f
+'2018-09-27 05:47:58 PM' - AutoTest - INFO - ----- 关闭浏览器 -----
+'2018-09-27 05:48:02 PM' - AutoTest - INFO - ----- 启动浏览器 -----
+'2018-09-27 05:48:04 PM' - AutoTest - INFO - 登录支付网关-首页
+'2018-09-27 05:48:05 PM' - AutoTest - INFO - 点击 '3方信用卡' 链接
+'2018-09-27 05:48:05 PM' - AutoTest - INFO - ----- 页面标题: 三方支付测试 -----
+'2018-09-27 05:48:05 PM' - AutoTest - INFO - 选择提交地址: https://pg.oceanpayment.com/gateway/service
+'2018-09-27 05:48:05 PM' - AutoTest - INFO - 输入帐号ID: 160135
+'2018-09-27 05:48:05 PM' - AutoTest - INFO - 输入终端ID: 16013501
+'2018-09-27 05:48:05 PM' - AutoTest - INFO - 输入交易币种: USD
+'2018-09-27 05:48:05 PM' - AutoTest - INFO - 输入交易金额: 10
+'2018-09-27 05:48:05 PM' - AutoTest - INFO - 点击 make payment
+'2018-09-27 05:48:06 PM' - AutoTest - INFO - ----- 页面链接: https://pg.oceanpayment.com/paymentpages/web/securepay.html;jsessionid=30BAEA34755A59EA342EAD7A4505D238 -----
+'2018-09-27 05:48:06 PM' - AutoTest - INFO - 输入 Card Number: 4929600002000005
+'2018-09-27 05:48:06 PM' - AutoTest - INFO - 4929600002000005
+'2018-09-27 05:48:06 PM' - AutoTest - INFO - 选择年月
+'2018-09-27 05:48:06 PM' - AutoTest - INFO - 输入 Secure Code
+'2018-09-27 05:48:06 PM' - AutoTest - INFO - 111
+'2018-09-27 05:48:06 PM' - AutoTest - INFO - 点击 PAY NOW
+'2018-09-27 05:48:07 PM' - AutoTest - INFO - 160135
+'2018-09-27 05:48:07 PM' - AutoTest - INFO - autotest
+'2018-09-27 05:48:07 PM' - AutoTest - INFO - admin123
+'2018-09-27 05:48:08 PM' - AutoTest - INFO - 
+'2018-09-27 05:48:08 PM' - AutoTest - INFO - 登录账户后台
+'2018-09-27 05:48:09 PM' - AutoTest - INFO - 进入退款管理 - 退款申请
+'2018-09-27 05:48:09 PM' - AutoTest - INFO - 1538041685808
+'2018-09-27 05:48:09 PM' - AutoTest - INFO - 180927174805645013500
+'2018-09-27 05:48:10 PM' - AutoTest - INFO - test
+'2018-09-27 05:48:10 PM' - AutoTest - INFO - test
+'2018-09-27 05:48:10 PM' - AutoTest - INFO - 申请退款
+'2018-09-27 05:48:11 PM' - AutoTest - INFO - canon
+'2018-09-27 05:48:11 PM' - AutoTest - INFO - Neng2018
+'2018-09-27 05:48:11 PM' - AutoTest - INFO - 
+'2018-09-27 05:48:11 PM' - AutoTest - INFO - 111111
+'2018-09-27 05:48:12 PM' - AutoTest - INFO - canon 登录管理后台
+'2018-09-27 05:48:14 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易查询
+'2018-09-27 05:48:14 PM' - AutoTest - INFO - 180927174805645013500
+'2018-09-27 05:48:15 PM' - AutoTest - INFO - 查询支付ID和异常类型:退款
+'2018-09-27 05:48:17 PM' - AutoTest - INFO - 异常交易查询 - 审核
+'2018-09-27 05:48:18 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易查询
+'2018-09-27 05:48:18 PM' - AutoTest - INFO - 180927174805645013500
+'2018-09-27 05:48:19 PM' - AutoTest - INFO - 查询支付ID和异常类型:退款
+'2018-09-27 05:48:20 PM' - AutoTest - INFO - 审核状态: //*[@id='dataListTbl']/tbody/tr[@class='line2 odd'][1]/td[12]
+'2018-09-27 05:48:21 PM' - AutoTest - INFO - 确认要退出吗?
+'2018-09-27 05:48:21 PM' - AutoTest - INFO - canon1
+'2018-09-27 05:48:22 PM' - AutoTest - INFO - Neng2018
+'2018-09-27 05:48:22 PM' - AutoTest - INFO - 
+'2018-09-27 05:48:23 PM' - AutoTest - INFO - 111111
+'2018-09-27 05:48:23 PM' - AutoTest - INFO - canon1 登录管理后台
+'2018-09-27 05:48:24 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易申请
+'2018-09-27 05:48:26 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易查询
+'2018-09-27 05:48:26 PM' - AutoTest - INFO - 180927174805645013500
+'2018-09-27 05:48:27 PM' - AutoTest - INFO - 查询支付ID和异常类型:退款
+'2018-09-27 05:48:29 PM' - AutoTest - INFO - 异常交易查询 - 复核
+'2018-09-27 05:48:30 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易查询
+'2018-09-27 05:48:30 PM' - AutoTest - INFO - 180927174805645013500
+'2018-09-27 05:48:32 PM' - AutoTest - INFO - 查询支付ID和异常类型:退款
+'2018-09-27 05:48:32 PM' - AutoTest - INFO - 审核状态: //*[@id='dataListTbl']/tbody/tr[@class='line2 odd'][1]/td[12]
+'2018-09-27 05:48:33 PM' - AutoTest - INFO - 登录账户后台
+'2018-09-27 05:48:34 PM' - AutoTest - INFO - 进入退款管理 - 查询退款
+'2018-09-27 05:48:34 PM' - AutoTest - INFO - 180927174805645013500
+'2018-09-27 05:48:35 PM' - AutoTest - INFO - 查询退款状态
+'2018-09-27 05:48:35 PM' - AutoTest - INFO - 登录支付网关-首页
+'2018-09-27 05:48:35 PM' - AutoTest - INFO - 点击 '3方信用卡' 链接
+'2018-09-27 05:48:35 PM' - AutoTest - INFO - ----- 页面标题: 三方支付测试 -----
+'2018-09-27 05:48:35 PM' - AutoTest - INFO - 选择提交地址: https://pg.oceanpayment.com/gateway/service
+'2018-09-27 05:48:35 PM' - AutoTest - INFO - 输入帐号ID: 160135
+'2018-09-27 05:48:35 PM' - AutoTest - INFO - 输入终端ID: 16013501
+'2018-09-27 05:48:35 PM' - AutoTest - INFO - 输入交易币种: USD
+'2018-09-27 05:48:35 PM' - AutoTest - INFO - 输入交易金额: 10
+'2018-09-27 05:48:35 PM' - AutoTest - INFO - 点击 make payment
+'2018-09-27 05:48:36 PM' - AutoTest - INFO - ----- 页面链接: https://pg.oceanpayment.com/paymentpages/web/securepay.html -----
+'2018-09-27 05:48:36 PM' - AutoTest - INFO - 输入 Card Number: 4929600002000005
+'2018-09-27 05:48:36 PM' - AutoTest - INFO - 4929600002000005
+'2018-09-27 05:48:36 PM' - AutoTest - INFO - 选择年月
+'2018-09-27 05:48:36 PM' - AutoTest - INFO - 输入 Secure Code
+'2018-09-27 05:48:36 PM' - AutoTest - INFO - 111
+'2018-09-27 05:48:36 PM' - AutoTest - INFO - 点击 PAY NOW
+'2018-09-27 05:48:38 PM' - AutoTest - INFO - 登录账户后台
+'2018-09-27 05:48:39 PM' - AutoTest - INFO - 进入退款管理 - 退款申请
+'2018-09-27 05:48:39 PM' - AutoTest - INFO - 1538041715556
+'2018-09-27 05:48:39 PM' - AutoTest - INFO - 180927174835432013521
+'2018-09-27 05:48:39 PM' - AutoTest - INFO - 5
+'2018-09-27 05:48:39 PM' - AutoTest - INFO - test
+'2018-09-27 05:48:40 PM' - AutoTest - INFO - test
+'2018-09-27 05:48:40 PM' - AutoTest - INFO - 申请退款
+'2018-09-27 05:48:41 PM' - AutoTest - INFO - 确认要退出吗?
+'2018-09-27 05:48:41 PM' - AutoTest - INFO - canon
+'2018-09-27 05:48:42 PM' - AutoTest - INFO - Neng2018
+'2018-09-27 05:48:42 PM' - AutoTest - INFO - 
+'2018-09-27 05:48:42 PM' - AutoTest - INFO - 111111
+'2018-09-27 05:48:42 PM' - AutoTest - INFO - canon 登录管理后台
+'2018-09-27 05:48:44 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易查询
+'2018-09-27 05:48:44 PM' - AutoTest - INFO - 180927174835432013521
+'2018-09-27 05:48:45 PM' - AutoTest - INFO - 查询支付ID和异常类型:退款
+'2018-09-27 05:48:47 PM' - AutoTest - INFO - 异常交易查询 - 审核
+'2018-09-27 05:48:48 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易查询
+'2018-09-27 05:48:48 PM' - AutoTest - INFO - 180927174835432013521
+'2018-09-27 05:48:49 PM' - AutoTest - INFO - 查询支付ID和异常类型:退款
+'2018-09-27 05:48:50 PM' - AutoTest - INFO - 审核状态: //*[@id='dataListTbl']/tbody/tr[@class='line2 odd'][1]/td[12]
+'2018-09-27 05:48:52 PM' - AutoTest - INFO - 确认要退出吗?
+'2018-09-27 05:48:52 PM' - AutoTest - INFO - canon1
+'2018-09-27 05:48:52 PM' - AutoTest - INFO - Neng2018
+'2018-09-27 05:48:52 PM' - AutoTest - INFO - 
+'2018-09-27 05:48:52 PM' - AutoTest - INFO - 111111
+'2018-09-27 05:48:53 PM' - AutoTest - INFO - canon1 登录管理后台
+'2018-09-27 05:48:54 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易申请
+'2018-09-27 05:48:56 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易查询
+'2018-09-27 05:48:56 PM' - AutoTest - INFO - 180927174835432013521
+'2018-09-27 05:48:57 PM' - AutoTest - INFO - 查询支付ID和异常类型:退款
+'2018-09-27 05:48:59 PM' - AutoTest - INFO - 异常交易查询 - 复核
+'2018-09-27 05:49:00 PM' - AutoTest - INFO - 进入交易信息管理 - 异常交易查询
+'2018-09-27 05:49:00 PM' - AutoTest - INFO - 180927174835432013521
+'2018-09-27 05:49:01 PM' - AutoTest - INFO - 查询支付ID和异常类型:退款
+'2018-09-27 05:49:02 PM' - AutoTest - INFO - 审核状态: //*[@id='dataListTbl']/tbody/tr[@class='line2 odd'][1]/td[12]
+'2018-09-27 05:49:03 PM' - AutoTest - INFO - 登录账户后台
+'2018-09-27 05:49:04 PM' - AutoTest - INFO - 进入退款管理 - 查询退款
+'2018-09-27 05:49:04 PM' - AutoTest - INFO - 180927174835432013521
+'2018-09-27 05:49:05 PM' - AutoTest - INFO - 查询退款状态
+'2018-09-27 05:49:05 PM' - AutoTest - INFO - ----- 关闭浏览器 -----
+'2018-09-27 05:49:05 PM' - AutoTest - INFO - ----- 结束执行测试用例 -----

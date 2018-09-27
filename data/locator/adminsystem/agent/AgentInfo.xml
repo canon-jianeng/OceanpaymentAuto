@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 管理后台 代理商管理 -> 代理商信息管理 -->
+<map>
+	<!-- 左侧导航栏 -->
+	<page pageName="leftside">
+        <!-- 代理商信息管理 -->
+		<locator type="id" timeOut="5" value="divclick_68">AgentInfo</locator>
+	</page>
+
+
+</map>

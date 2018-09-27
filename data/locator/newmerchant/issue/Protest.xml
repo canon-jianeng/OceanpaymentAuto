@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 问题管理 -> 拒付处理 -->
+<map>
+	<!-- 查询页面 -->
+	<page pageName="query">
+		<!-- 支付ID -->
+		<locator type="xpath" timeOut="5"
+			value="//*[@id='submitForm']/div[1]/div/div/div/div[2]/div/div/div/div[1]/input">PayId</locator>
+		<!-- 查询按钮 -->
+		<locator type="xpath" timeOut="5"
+			value="//*[@id='submitForm']/div[1]/div/div/div/div[1]/div[3]/button">QueryBtn</locator>
+		<!-- 发起申诉按钮 -->
+		<locator type="xpath" timeOut="5"
+			value="//*[@id='submitForm']//button[2]">AppealBtn</locator>
+		<!-- 查询结果第一行 -->
+		<locator type="xpath" timeOut="5"
+                 value="//*[@id='submitForm']/div[9]/div/div/div[2]/table/tbody/tr">Row</locator>
+	</page>
+
+	<!-- 发起申诉页面 -->
+	<page pageName="appeal">
+		<!-- 详细说明复选框 -->
+		<locator type="id" timeOut="5" value="f1">Descri</locator>
+		<!-- 详细说明文本域 -->
+		<locator type="id" timeOut="5" value="a1">TextArea</locator>
+		<!-- 上传申诉材料按钮 -->
+		<locator type="xpath" timeOut="5"
+                 value="//*[@id='submitForm']/div/div[3]/div/div/div[5]/div/button">AppealBtn</locator>
+        <!-- 上传申诉材料 - 上传文件按钮 -->
+        <locator type="xpath" timeOut="5"
+                 value="//*[@id='myModal10']/div/div/div[2]/div/div[1]/div/div[1]/div[2]/div[2]/div">AppealUpload</locator>
+        <!-- 上传申诉材料 - 提交按钮 -->
+        <locator type="xpath" timeOut="5"
+                 value="//*[@id='myModal10']/div/div/div[2]/div/div[3]/div/button[1]">AppealSubmit</locator>
+        <!-- 上传申诉材料 - 成功按钮 -->
+        <locator type="xpath" timeOut="5"
+                 value="/html/body/div[5]/div[7]/button[2]">AppealSuccess</locator>
+		<!-- 提交按钮 -->
+		<locator type="xpath" timeOut="5"
+                 value="//*[@id='submitForm']/div/div[4]/input[1]">Submit</locator>
+	</page>
+</map>

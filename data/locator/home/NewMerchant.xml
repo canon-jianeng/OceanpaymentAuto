@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<map>
+	<!-- 账户后台登录页 -->
+	<page pageName="login">
+		<!-- Locator lists
+		1、selenium.webdriver.common.by
+			type = ["id", "xpath", "link text", "partial link text", "name", "tag name", "class name", "css selector"]
+		2、JavaScript
+			type: "js"
+		-->
+		<!-- 登录标志 -->
+        <locator type="xpath" timeOut="5"
+			value="//*[@id='defaultForm']/h3">LoginFlag</locator>
+		<!-- 账户 -->
+		<locator type="xpath" timeOut="5"
+			value="//*[@id='defaultForm']/div[1]/div/div/input">Account</locator>
+		<!-- 登录名 -->
+		<locator type="xpath" timeOut="5"
+			value="//*[@id='defaultForm']/div[2]/div/div/input">LoginName</locator>
+		<!-- 密码 -->
+		<locator type="xpath" timeOut="5"
+			value="//*[@id='defaultForm']/div[3]/div/div/input">LoginPass</locator>
+		<!-- 验证码 -->
+		<locator type="id" timeOut="5" value="checkCode">CheckCode</locator>
+		<!-- 登录按钮 -->
+		<locator type="xpath" timeOut="5"
+			value="//*[@id='defaultForm']/div[5]/div/button">LoginBtn</locator>
+	</page>
+
+	<!-- 账户后台首页 -->
+	<page pageName="home">
+		<!-- 一级菜单 -->
+		<locator type="xpath" timeOut="5" value="//*[@id='side-menu']/li/a/span">MenuOne</locator>
+		<!-- 二级菜单 -->
+		<locator type="xpath" timeOut="5" value="//*[@id='side-menu']/li/ul/li/a">MenuTwo</locator>
+		<!-- 退出登录 -->
+		<locator type="xpath" timeOut="5" value="//*[@id='page-wrapper']/div[1]/nav/ul/li[4]/a">QuitLogin</locator>
+        <!-- 确认按钮 -->
+		<locator type="xpath" timeOut="5" value="/html/body/div[4]/div[7]/button[2]">QuitLogin</locator>
+	</page>
+</map>

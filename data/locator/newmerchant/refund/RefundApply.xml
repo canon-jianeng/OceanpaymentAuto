@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 退款管理 -> 退款申请 -->
+<map>
+	<!-- 申请页面 -->
+	<page pageName="apply">
+		<!-- 账户订单号 -->
+		<locator type="id" timeOut="5" value="merOrderNo">OrderNum</locator>
+		<!-- 支付ID -->
+		<locator type="id" timeOut="5" value="tradeNo">PayId</locator>
+		<!-- 部分退款 -->
+		<locator type="xpath" timeOut="5"
+                 value="//*[@id='submitForm']/div[5]/div[2]/button">RefundPart</locator>
+		<!-- 退款金额 -->
+		<locator type="id" timeOut="5" value="amount">RefundAmount</locator>
+		<!-- 退款原因 -->
+		<locator type="id" timeOut="5" value="reason">RefundReason</locator>
+		<!-- 退款说明 -->
+		<locator type="id" timeOut="5" value="remark">RefundDes</locator>
+        <!-- 退款附加信息 -->
+        <locator type="id" timeOut="5" value="refund_description_1">RefundInfo</locator>
+        <!-- 提交按钮 -->
+        <locator type="id" timeOut="5" value="subutton">Submit</locator>
+	</page>
+
+</map>

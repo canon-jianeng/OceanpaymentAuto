@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 管理后台 交易信息管理 -> 异常交易申请 -->
+<map>
+    <!-- 查询页面 -->
+    <page pageName="query">
+		<!-- 支付 ID 文本框 -->
+		<locator type="id" timeOut="5" value="unormalTradeRecordForm_randomOrderno">PayId</locator>
+		<!-- 退款状态 -->
+		<locator type="id" timeOut="5" value="unormalTradeRecordForm_drawbackState">DrawBack</locator>
+        <!-- 拒付状态 -->
+		<locator type="id" timeOut="5" value="unormalTradeRecordForm_refusalPaymentState">RefusalPay</locator>
+        <!-- 调单状态 -->
+		<locator type="id" timeOut="5" value="unormalTradeRecordForm_freezeState">Freeze</locator>
+        <!-- 申请按钮 -->
+        <locator type="xpath" timeOut="5" value="//*[@id='buttonListDiv']/span[7]/a">ApplyBtn</locator>
+	</page>
+
+    <!-- 申请页面 -->
+    <page pageName="apply">
+		<!-- 提交人类型 -->
+		<locator type="id" timeOut="5" value="submitManType">SubmitType</locator>
+        <!-- 异常类型 -->
+		<locator type="id" timeOut="5" value="exceptionType">AbnormalType</locator>
+        <!-- 异常金额 -->
+        <locator type="id" timeOut="5" value="exceptionAmount">Amount</locator>
+        <!-- 标识码 ARN -->
+        <locator type="id" timeOut="5" value="upArn">ARN</locator>
+        <!-- 回复截止时间 -->
+        <locator type="id" timeOut="5" value="repalytime">RepalyTime</locator>
+        <!-- 拒付原因  -->
+        <locator type="id" timeOut="5" value="protestReason">ProtestReason</locator>
+        <!-- 异常原因 -->
+        <locator type="id" timeOut="5" value="exceptionReason">Reason</locator>
+	</page>
+
+</map>

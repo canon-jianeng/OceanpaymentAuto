@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<map>
+	<!-- 支付网关首页 -->
+	<page pageName="testpage">
+		<!-- Locator lists
+		1、selenium.webdriver.common.by
+			type = ["id", "xpath", "link text", "partial link text", "name", "tag name", "class name", "css selector"]
+		2、JavaScript
+			type: "js"
+		-->
+		<!-- 支付网关接口 -->
+		<locator type="xpath" timeOut="5"
+			value="//*[@id='testForm']/div/div/div/ul/li/table/tbody/tr/td[2]//u">Interface</locator>
+	</page>
+</map>

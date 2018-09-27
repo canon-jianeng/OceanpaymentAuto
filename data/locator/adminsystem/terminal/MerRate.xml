@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 管理后台 终端号管理 -> 扣率管理 -->
+<map>
+	<!-- 左侧导航栏 -->
+	<page pageName="leftside">
+        <!-- 扣率管理 -->
+		<locator type="id" timeOut="5" value="divclick_32">Rate</locator>
+	</page>
+
+    <!-- 查询页面 -->
+    <page pageName="query">
+		<!-- 终端号 -->
+		<locator type="id" timeOut="5" value="merRateForm_mrGwNo">Terminal</locator>
+        <!-- 查询按钮 -->
+		<locator type="id" timeOut="5" value="queryBtn">QueryBtn</locator>
+        <!-- 复选框 -->
+        <locator type="id" timeOut="5" value="mids">Mids</locator>
+        <!-- 新增按钮 -->
+        <locator type="xpath" timeOut="5" value="//*[@id='buttonListDiv']/span[6]/a">Create</locator>
+	</page>
+
+    <!-- 新增页面 -->
+    <page pageName="create">
+		<!-- 账户  -->
+		<locator type="id" timeOut="5" value="mrMerNo">Account</locator>
+        <!-- 终端号 -->
+		<locator type="id" timeOut="5" value="mrGwNo">Terminal</locator>
+        <!-- 支付方式 -->
+        <locator type="id" timeOut="5" value="paymethod">Paymethod</locator>
+        <!-- 卡种 -->
+        <locator type="id" timeOut="5" value="businessType">BusType</locator>
+        <!-- 银行代码 -->
+        <locator type="id" timeOut="5" value="mcBankCode">BankCode</locator>
+        <!-- 通道代码 -->
+        <locator type="id" timeOut="5" value="mcChaCode">ChannelCode</locator>
+        <!-- 交易扣率 -->
+        <locator type="id" timeOut="5" value="mrTradeRate">TradeRate</locator>
+        <!-- 提交按钮 -->
+        <locator type="id" timeOut="5" value="btnAdd">SubmitBtn</locator>
+	</page>
+
+</map>
