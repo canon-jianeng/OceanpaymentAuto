@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 问题管理 -> 伪冒处理 -->
+<map>
+	<!-- 查询页面 -->
+	<page pageName="query">
+		<!-- 支付ID -->
+		<locator type="xpath" timeOut="5"
+			value="//*[@id='submitForm']/div[1]/div/div/div/div[2]/div/div/div/div[1]/input">PayId</locator>
+		<!-- 查询按钮 -->
+		<locator type="xpath" timeOut="5"
+			value="//*[@id='submitForm']/div[1]/div/div/div/div[1]/div[3]/button/span[1]">QueryBtn</locator>
+		<!-- 查询结果第一行 -->
+		<locator type="xpath" timeOut="5"
+                 value="//*[@id='submitForm']/div[2]/div/div/div[2]/table/tbody/tr[1]">Row</locator>
+	</page>
+
+</map>

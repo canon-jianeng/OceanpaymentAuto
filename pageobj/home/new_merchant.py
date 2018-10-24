@@ -69,12 +69,24 @@ class HomePage(basepage.Action):
         # ----- 定位器，通过元素属性定位元素对象 ----- #
         self.menu_one = dict_home['MenuOne']
         self.menu_two = dict_home['MenuTwo']
+        self.language = dict_home['Language']
+        self.chinese = dict_home['Chinese']
+        self.confirm = dict_home['ConfirmBtn']
 
     # ----- 页面操作 ----- #
     def click_menu_one(self, val):
         # 获得一级菜单
-        self.click_btn(self.menu_one, val)
+        self.click_by_name(self.menu_one, val)
 
     def click_menu_two(self, val):
         # 获得二级菜单
-        self.click_btn(self.menu_two, val)
+        self.click_by_name(self.menu_two, val)
+
+    def select_language(self):
+        # 选择界面语言
+        self.click_button(self.language)
+        self.click_button(self.chinese)
+
+    def click_confirm(self):
+        # 点击确认
+        self.click_button(self.confirm)

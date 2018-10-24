@@ -24,12 +24,6 @@ class SubmitPage(basepage.Action):
                 if (!first_val && i == 0){
                   i = 1;
                 };
-                /*
-                try{
-                  var name = arr[i].textContent.trim().replace(":", "");
-                }catch(e){
-                  var name = None;
-                };*/
                 var name = arr[i].textContent.trim().replace(":", "").replace("：", "");
                 if (name == tag_name){
                   var tag = arr[i+1].lastElementChild.tagName;
@@ -38,7 +32,7 @@ class SubmitPage(basepage.Action):
                     // 选中 select 某一选项
                     arr[i+1].onclick = function(){
                       for (var n = 0; n < ele.options.length; n++){  
-                        if (ele.options[n].textContent.trim() == item){
+                        if (ele.options[n].textContent.trim() == item.trim()){
                           // ele.value=ele.options[n].value;
                           ele.options[n].selected=true;
                           break;

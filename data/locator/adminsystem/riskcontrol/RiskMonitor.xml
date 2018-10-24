@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 管理后台 风控管理 -> 风险监控综合管理 -->
+<map>
+    <!-- 查询页面 -->
+    <page pageName="query">
+		<!-- 支付ID -->
+		<locator type="id" timeOut="5" value="trNo">PayId</locator>
+        <!-- 新增伪冒 -->
+		<locator type="xpath" timeOut="5" value="//*[@id='buttonListDiv']/span[6]/a">Counterfeit</locator>
+		<!-- 显示列表栏 -->
+        <locator type="xpath" timeOut="5" value="//*[@id='dataListTbl']/tbody/tr[1]/td">TableMenu</locator>
+        <!-- 显示列表 -->
+        <locator type="xpath" timeOut="1"
+                 value="//*[@id='dataListTbl']/tbody/tr[@class='line2'][{}]/td[{}]">TableValue</locator>
+	</page>
+
+    <!-- 新增伪冒页面 -->
+    <page pageName="create">
+		<!-- 支付ID  -->
+		<locator type="id" timeOut="5" value="trNo">PayId</locator>
+        <!-- 伪冒币种 -->
+		<locator type="id" timeOut="5" value="uoCurrency">Currency</locator>
+        <!-- 伪冒金额 -->
+        <locator type="id" timeOut="5" value="uoAmount">Amount</locator>
+        <!-- 伪冒原因 -->
+        <locator type="id" timeOut="5" value="uoReason">Reason</locator>
+	</page>
+
+</map>

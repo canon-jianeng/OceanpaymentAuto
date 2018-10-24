@@ -13,7 +13,10 @@ from common.conf_utils import Gateway
 # 当前年份的下一年
 YEAR = str(datetime.datetime.now().year + 1)
 # 当前月份
-MONTH = '0{0}'.format(datetime.datetime.now().month)
+if int(datetime.datetime.now().month) > 9:
+    MONTH = '{0}'.format(datetime.datetime.now().month)
+else:
+    MONTH = '0{0}'.format(datetime.datetime.now().month)
 # 格式: 月/年 "0119"
 MON_YEAR = MONTH + YEAR[2:]
 
@@ -55,7 +58,7 @@ class Pay(basepage.Action):
 
     def select_card_year(self):
         # 选择 "年份" 下拉框
-        self.select_combobox(self.year, YEAR)
+        self.select_combobox(self.year, YEAR, way="value")
 
     def input_secure_code(self, secure_code):
         # 输入 SecureCode
@@ -139,7 +142,7 @@ class Standard(basepage.Action):
 
     def select_card_year(self):
         # 选择 "年份" 下拉框
-        self.select_combobox(self.year, YEAR)
+        self.select_combobox(self.year, YEAR, way="value")
 
     def input_secure_code(self, secure_code):
         # 输入 SecureCode
@@ -181,7 +184,7 @@ class Ncgame(basepage.Action):
 
     def select_card_year(self):
         # 选择 "年份" 下拉框
-        self.select_combobox(self.year, YEAR)
+        self.select_combobox(self.year, YEAR, way="value")
 
     def input_secure_code(self, secure_code):
         # 输入 SecureCode
@@ -223,7 +226,7 @@ class Safe(basepage.Action):
 
     def select_card_year(self):
         # 选择 "年份" 下拉框
-        self.select_combobox(self.year, YEAR)
+        self.select_combobox(self.year, YEAR, way="value")
 
     def input_secure_code(self, secure_code):
         # 输入 SecureCode
@@ -271,7 +274,7 @@ class Inst(basepage.Action):
 
     def select_card_year(self):
         # 选择 "年份" 下拉框
-        self.select_combobox(self.year, YEAR)
+        self.select_combobox(self.year, YEAR, way="value")
 
     def input_secure_code(self, secure_code):
         # 输入 SecureCode
@@ -319,7 +322,7 @@ class Multiple(basepage.Action):
 
     def select_card_year(self):
         # 选择 "年份" 下拉框
-        self.select_combobox(self.cardyear, YEAR)
+        self.select_combobox(self.cardyear, YEAR, way="value")
 
     def input_secure_code(self, secure_code):
         # 输入 SecureCode
@@ -523,7 +526,7 @@ class Virtual(basepage.Action):
 
     def select_card_year(self):
         # 选择 "年份" 下拉框
-        self.select_combobox(self.year, YEAR)
+        self.select_combobox(self.year, YEAR, way="value")
 
     def input_secure_code(self, secure_code):
         # 输入 SecureCode

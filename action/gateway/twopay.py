@@ -27,7 +27,8 @@ class Action(object):
             test_data = {}
         test_pay = Sub.SubmitPage(self.driver)
         log.info("----- 页面标题: %s -----" % self.driver.title)
-        addr = self.gate.read_val("gateway", "proj_domain") + self.gate.read_val("addr", "two")
+        str_two = self.gate.read_val("addr", "two").replace('"', '')
+        addr = self.gate.read_val("gateway", "proj_domain") + str_two
         test_data.update({"提交地址": addr})
         for item in test_data:
             tag_name = test_pay.update_info(item, test_data[item])

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 管理后台 终端号管理 -> 查询终端号通道绑定 -->
+<map>
+    <!-- 查询页面 -->
+    <page pageName="query">
+		<!-- 终端号 -->
+		<locator type="id" timeOut="5" value="gatewayForm_gwno">Terminal</locator>
+        <!-- 卡种下拉框 -->
+		<locator type="xpath" timeOut="5"
+                 value="//*[@id='queryTable']/tbody/tr[3]/td[2]/div/span/button">CardBtn</locator>
+        <locator type="xpath" timeOut="5"
+                 value="//*[@id='queryTable']/tbody/tr[3]/td[2]/div/span/div/div[1]/div[1]/button[2]">AllNot</locator>
+        <locator type="xpath" timeOut="5"
+                 value="//*[@id='queryTable']/tbody/tr[3]/td[2]/div/span/div/div[2]/div/div/label/span">CardTotal</locator>
+		<!-- 通道下拉框 -->
+		<locator type="xpath" timeOut="5"
+                 value="//*[@id='queryTable']/tbody/tr[2]/td[4]/div/span/button">ChannelBtn</locator>
+        <locator type="xpath" timeOut="5"
+                 value="//*[@id='queryTable']/tbody/tr[2]/td[4]/div/span/div/div[2]/div/div/label/span">Channel</locator>
+        <!-- 新增 -->
+		<locator type="xpath" timeOut="5" value="//*[@id='buttonListDiv']/span[6]/a">Create</locator>
+		<!-- 查询结果为空 -->
+		<locator type="xpath" timeOut="1"
+                 value="//*[@id='gatewayForm']/div[3]/div[2]/div[5]/span">ResNull</locator>
+	</page>
+
+    <!-- 新增页面 -->
+    <page pageName="create">
+		<!-- 账户 -->
+		<locator type="id" timeOut="5" value="mcMerNo">MerNo</locator>
+		<!-- 终端号 -->
+		<locator type="id" timeOut="5" value="mcGwNo">Terminal</locator>
+		<!-- 支付方式 -->
+		<locator type="id" timeOut="5" value="paymethod">PayMethod</locator>
+        <!-- 卡种 -->
+		<locator type="xpath" timeOut="5"
+                 value="//*[@id='gatewayForm']/div[3]/div[3]/table/tbody/tr[4]/td[2]/div/span/button">CardBtn</locator>
+        <locator type="xpath" timeOut="5"
+                 value="//*[@id='gatewayForm']/div[3]/div[3]/table/tbody/tr[4]/td[2]/div/span/div/div[2]/div/div/label/span">CardTotal</locator>
+        <!-- 银行代码 -->
+		<locator type="xpath" timeOut="5"
+                 value="//*[@id='gatewayForm']/div[3]/div[3]/table/tbody/tr[6]/td[2]/div/input">BankBtn</locator>
+        <locator type="xpath" timeOut="5"
+                 value="//*[@id='gatewayForm']/div[3]/div[3]/table/tbody/tr[6]/td[2]/div/ul/li[text()='{0[0]}']">BankItem</locator>
+        <!-- 通道 -->
+		<locator type="xpath" timeOut="5"
+                 value="//*[@id='gatewayForm']/div[3]/div[3]/table/tbody/tr[7]/td[2]/div/input">ChannelBtn</locator>
+        <locator type="xpath" timeOut="5"
+                 value="//*[@id='gatewayForm']/div[3]/div[3]/table/tbody/tr[7]/td[2]/div/ul/li[contains(text(), '{0[0]}')]">ChannelItem</locator>
+        <!-- 支付类型 -->
+		<locator type="id" timeOut="5" value="mcPaytype">PayType</locator>
+        <!-- 是否开通全预授权 -->
+		<locator type="id" timeOut="5" value="mcOpenAuthor">OpenAuthor</locator>
+        <!-- 是否自动撤销授权 -->
+		<locator type="id" timeOut="5" value="mcAutoAuthor">AutoAuthor</locator>
+        <!-- 绑定状态 -->
+		<locator type="id" timeOut="5" value="mcStatus">Status</locator>
+	</page>
+
+</map>

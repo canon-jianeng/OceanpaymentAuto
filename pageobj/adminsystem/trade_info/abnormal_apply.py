@@ -97,7 +97,7 @@ class Apply(basepage.Action):
 
     def select_protest_reason(self, item):
         # 选择拒付原因
-        self.select_combobox(self.protest_reason, item, "text")
+        self.select_combobox(self.protest_reason, item)
 
     def input_reason(self, val):
         # 输入异常原因

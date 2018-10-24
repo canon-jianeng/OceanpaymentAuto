@@ -45,10 +45,14 @@
         <locator type="id" timeOut="5" value="btnAdd">SubmitBtn</locator>
         <!-- 单(复)选框 -->
         <locator type="id" timeOut="5" value="mids">Mids</locator>
+        <!-- 提交操作结果 -->
+        <locator type="xpath" timeOut="1" value="/html/body/form/div[2]/div[2]/div[2]/p">SubmitRes</locator>
         <!-- 显示列表栏 -->
         <locator type="xpath" timeOut="5" value="//*[@id='dataListTbl']/tbody/tr[1]/td">TableMenu</locator>
         <!-- 显示列表 -->
+        <!--<locator type="xpath" timeOut="5"
+                 value="//*[@id='dataListTbl']/tbody/tr[@class='line2 odd'][{}]/td[{}]">TableValue</locator>-->
         <locator type="xpath" timeOut="5"
-                 value="//*[@id='dataListTbl']/tbody/tr[@class='line2 odd'][{}]/td[{}]">TableValue</locator>
+                 value="//*[@id='dataListTbl']/tbody/tr[2][{}]/td[{}]">TableValue</locator>
     </page>
 </map>

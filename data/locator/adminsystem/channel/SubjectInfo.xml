@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 管理后台 通道管理 -> 主体信息管理 -->
+<map>
+    <!-- 查询页面 -->
+    <page pageName="query">
+		<!-- 银行名称 -->
+		<locator type="xpath" timeOut="5"
+                 value="//*[@id='queryTable']/tbody/tr[1]/td[2]/div/span/button">NameBtn</locator>
+        <locator type="xpath" timeOut="5"
+                 value="//*[@id='queryTable']/tbody/tr[1]/td[2]/div/span/div/div[1]/div[2]/input">NameInput</locator>
+        <locator type="xpath" timeOut="5"
+                 value="//*[@id='queryTable']/tbody/tr[1]/td[2]/div/span/div/div[2]/div">NameVal</locator>
+        <!-- 通道主体 -->
+        <locator type="id" timeOut="5" value="channelBody">Subject</locator>
+        <!-- 结算主体 -->
+        <locator type="id" timeOut="5" value="settleBody">Settle</locator>
+        <!-- 新增 -->
+		<locator type="xpath" timeOut="5" value="//*[@id='buttonListDiv']/span[4]/a">Create</locator>
+		<!-- 查询结果为空 -->
+        <locator type="xpath" timeOut="1" value="//*[@id='subjectInfoForm']/div[3]/div[2]/div[5]/span">ResNull</locator>
+	</page>
+
+    <!-- 新增页面 -->
+    <page pageName="create">
+		<!-- 银行名称 -->
+		<locator type="id" timeOut="5" value="select2-bankName-container">NameBtn</locator>
+        <locator type="xpath" timeOut="5" value="/html/body/span/span/span[1]/input">NameInput</locator>
+        <locator type="xpath" timeOut="5" value="/html/body/span/span/span[2]/ul/li">NameVal</locator>
+        <!-- 通道主体 -->
+        <locator type="id" timeOut="5" value="ccbId">Channel</locator>
+		<!-- 结算主体 -->
+		<locator type="id" timeOut="5" value="csbId">Settle</locator>
+	</page>
+
+</map>

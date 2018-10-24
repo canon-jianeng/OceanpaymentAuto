@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 管理后台 通道管理 -> 通道信息管理 -->
+<map>
+    <!-- 查询页面 -->
+    <page pageName="query">
+		<!-- 通道名称 -->
+		<locator type="xpath" timeOut="5"
+                 value="//*[@id='queryTable']/tbody/tr[1]/td[2]/div/span/button">NameBtn</locator>
+        <locator type="xpath" timeOut="5"
+                 value="//*[@id='queryTable']/tbody/tr[1]/td[2]/div/span/div/div[1]/div[2]/input">NameInput</locator>
+        <locator type="xpath" timeOut="1"
+                 value="//*[@id='queryTable']/tbody/tr[1]/td[2]/div/span/div/div[2]/div/div/label/span">NameVal</locator>
+        <!-- 新增 -->
+		<locator type="xpath" timeOut="5" value="//*[@id='buttonListDiv']/span[12]/a">Create</locator>
+		<!-- 查询结果为空 -->
+        <locator type="xpath" timeOut="1" value="//*[@id='channelForm']/div[3]/div[2]/div[5]/span">ResNull</locator>
+	</page>
+
+    <!-- 新增页面 -->
+    <page pageName="create">
+		<!-- 字段标签 -->
+		<locator type="xpath" timeOut="5"
+                 value="//*[@id='channelForm']/div[3]/div[3]/table/tbody/tr/td[1]">VarName</locator>
+        <!-- 文本框 -->
+        <locator type="xpath" timeOut="5"
+                 value="//*[@id='channelForm']/div[3]/div[3]/table/tbody/tr[{}]/td[2]/input">Text</locator>
+		<!-- 选择框 -->
+		<locator type="xpath" timeOut="5"
+                 value="//*[@id='channelForm']/div[3]/div[3]/table/tbody/tr[{}]/td[2]/select">Select</locator>
+		<!-- 是否单选项 -->
+		<locator type="xpath" timeOut="5"
+                 value="//*[@id='channelForm']/div[3]/div[3]/table/tbody/tr[{}]/td[2]/input[1]">RadioYes</locator>
+		<locator type="xpath" timeOut="5"
+                 value="//*[@id='channelForm']/div[3]/div[3]/table/tbody/tr[{}]/td[2]/input[2]">RadioNo</locator>
+        <!-- 卡种扣率 -->
+        <locator type="xpath" timeOut="5"
+                 value="//*[@id='channelForm']/div[3]/div[3]/table/tbody/tr[21]//tbody/tr/td[1]/label">RateItem</locator>
+        <locator type="xpath" timeOut="5"
+                 value="//*[@id='channelForm']/div[3]/div[3]/table/tbody/tr[21]//tbody/tr[{}]/td[1]/input">RateSingle</locator>
+        <!-- 通道币种类型 -->
+		<locator type="xpath" timeOut="5"
+                 value="//*[@id='channelForm']/div[3]/div[3]/table/tbody/tr[23]/td[2]/input[1]">CurrencySingle</locator>
+        <locator type="xpath" timeOut="5"
+                 value="//*[@id='channelForm']/div[3]/div[3]/table/tbody/tr[23]/td[2]/input[2]">CurrencyMulti</locator>
+        <!-- 通道币种(单个) -->
+        <locator type="xpath" timeOut="5"
+                 value="//*[@id='radDiv']/span/label">CurrencyName</locator>
+        <locator type="xpath" timeOut="5"
+                 value="//*[@id='radDiv']/span[{}]/input">CurrencyBtn</locator>
+		<!-- 通道币种(多个) -->
+        <locator type="xpath" timeOut="5"
+                 value="//*[@id='cbDiv']/span/label">MutliName</locator>
+        <locator type="xpath" timeOut="5"
+                 value="//*[@id='cbDiv']/span[{}]/input">MutliBtn</locator>
+	</page>
+
+</map>

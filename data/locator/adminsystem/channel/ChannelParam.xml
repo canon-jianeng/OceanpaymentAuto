@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 管理后台 通道管理 -> 通道特殊参数配置 -->
+<map>
+    <!-- 查询页面 -->
+    <page pageName="query">
+		<!-- 支付方式 -->
+		<locator type="xpath" timeOut="5"
+                 value="//*[@id='queryTable']/tbody/tr[1]/td[2]/div/span/button">MethodBtn</locator>
+        <locator type="xpath" timeOut="5"
+                 value="//*[@id='queryTable']/tbody/tr[1]/td[2]/div/span/div/div[1]/div[2]/input">MethodInput</locator>
+        <locator type="xpath" timeOut="5"
+                 value="//*[@id='queryTable']/tbody/tr[1]/td[2]/div/span/div/div[2]/div">MethodVal</locator>
+		<!-- 银行名称 -->
+		<locator type="xpath" timeOut="5"
+                 value="//*[@id='queryTable']/tbody/tr[1]/td[4]/div/span/button">BankBtn</locator>
+        <locator type="xpath" timeOut="5"
+                 value="//*[@id='queryTable']/tbody/tr[1]/td[4]/div/span/div/div[1]/div[2]/input">BankInput</locator>
+        <locator type="xpath" timeOut="5"
+                 value="//*[@id='queryTable']/tbody/tr[1]/td[4]/div/span/div/div[2]/div">BankVal</locator>
+		<!-- 通道名称 -->
+		<locator type="xpath" timeOut="5"
+                 value="//*[@id='queryTable']/tbody/tr[2]/td[2]/div/span/button">NameBtn</locator>
+        <locator type="xpath" timeOut="5"
+                 value="//*[@id='queryTable']/tbody/tr[2]/td[2]/div/span/div/div[1]/div[2]/input">NameInput</locator>
+        <locator type="xpath" timeOut="5"
+                 value="//*[@id='queryTable']/tbody/tr[2]/td[2]/div/span/div/div[2]/div">NameVal</locator>
+        <!-- 新增 -->
+		<locator type="xpath" timeOut="5" value="//*[@id='buttonListDiv']/span[7]/a">Create</locator>
+		<!-- 查询结果为空 -->
+        <locator type="xpath" timeOut="1" value="//*[@id='scbChannelForm']/div[3]/div[2]/div[5]/span">ResNull</locator>
+	</page>
+
+    <!-- 新增页面 -->
+    <page pageName="create">
+		<!-- 字段标签 -->
+		<locator type="xpath" timeOut="5"
+                 value="//*[@id='channelForm']/div[3]/div[3]/table/tbody/tr/td[1]">VarName</locator>
+        <!-- 文本框 -->
+        <locator type="xpath" timeOut="5"
+                 value="//*[@id='channelForm']/div[3]/div[3]/table/tbody/tr[{}]/td[2]/input">Text</locator>
+		<!-- 选择框 -->
+		<locator type="xpath" timeOut="5"
+                 value="//*[@id='channelForm']/div[3]/div[3]/table/tbody/tr[{}]/td[2]/select">Select</locator>
+	</page>
+
+</map>

@@ -21,6 +21,7 @@ class Action(object):
         self.driver = driver
 
     def apply_protest(self, pay_id, sub_type, abn_type, amount, protest):
+        log.info("申请拒付")
         # 查询支付ID
         Home(self.driver).abn_apply()
         self.query.input_pay_id(pay_id)
@@ -35,9 +36,9 @@ class Action(object):
         self.apply.input_repaly_time()
         self.apply.select_protest_reason(protest)
         self.common.click_submit()
-        log.info("申请拒付")
 
     def apply_freeze(self, pay_id, sub_type, abn_type, amount):
+        log.info("申请调单")
         # 查询支付ID
         Home(self.driver).abn_apply()
         self.query.input_pay_id(pay_id)
@@ -52,9 +53,9 @@ class Action(object):
         self.apply.input_repaly_time()
         self.apply.input_reason("autotest")
         self.common.click_submit()
-        log.info("申请调单")
 
     def apply_appeal_success(self, pay_id, sub_type, abn_type):
+        log.info("申请申诉成功")
         # 查询支付ID
         Home(self.driver).abn_apply()
         self.query.input_pay_id(pay_id)
@@ -65,25 +66,24 @@ class Action(object):
         self.apply.select_sub_type(sub_type)
         self.apply.select_abn_type(abn_type)
         self.common.click_submit()
-        log.info("申请申诉成功")
 
     def query_refund(self, pay_id, refund):
+        log.info("查询支付ID和退款状态")
         Home(self.driver).abn_apply()
         self.query.input_pay_id(pay_id)
         self.query.select_draw_back(refund)
         self.common.click_query()
-        log.info("查询支付ID和退款状态")
 
     def query_protest(self, pay_id, protest):
+        log.info("查询支付ID和拒付状态")
         Home(self.driver).abn_apply()
         self.query.input_pay_id(pay_id)
         self.query.select_ref_pay(protest)
         self.common.click_query()
-        log.info("查询支付ID和拒付状态")
 
     def query_freeze(self, pay_id, freeze):
+        log.info("查询支付ID和调单状态")
         Home(self.driver).abn_apply()
         self.query.input_pay_id(pay_id)
         self.query.select_freeze(freeze)
         self.common.click_query()
-        log.info("查询支付ID和调单状态")

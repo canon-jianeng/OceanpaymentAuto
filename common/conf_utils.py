@@ -7,6 +7,7 @@
 
 import os
 from configparser import ConfigParser
+from configobj import ConfigObj
 
 # 项目路径
 CUR_PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -41,8 +42,10 @@ class Project(object):
 class Gateway(object):
     def __init__(self):
         self.conf = ConfigParser()
+        file_name = Project().read_gateway()
+        self.config = ConfigObj(file_name, encoding='UTF-8')
         # 读取支付网关的配置文件
-        self.conf.read(Project().read_gateway(), encoding='UTF-8')
+        self.conf.read(file_name, encoding='UTF-8')
 
     def read_link(self):
         # 读取支付网关登录链接
@@ -56,7 +59,18 @@ class Gateway(object):
         """
         return self.conf.items(section)
 
+    def write_env(self, domain, test_flag):
+        self.config["gateway"]["proj_domain"] = domain
+        self.config["gateway"]["test_data"] = test_flag
+        # 写回配置文件
+        self.config.write()
+
     def read_path(self, sec, opt):
+        return CUR_PATH + self.conf.get(sec, opt)
+
+    def read_data(self, opt, sec=""):
+        if sec == "":
+            sec = self.conf.get("gateway", "test_data")
         return CUR_PATH + self.conf.get(sec, opt)
 
     def read_val(self, sec, opt):
@@ -66,10 +80,23 @@ class Gateway(object):
 class AutoCheck(object):
     def __init__(self):
         self.conf = ConfigParser()
+        file_name = Project().read_check()
+        self.config = ConfigObj(file_name, encoding='UTF-8')
         # 读取对账的配置文件
-        self.conf.read(Project().read_check(), encoding='UTF-8')
+        self.conf.read(file_name, encoding='UTF-8')
+
+    def write_env(self, domain, test_flag):
+        self.config["autocheck"]["proj_domain"] = domain
+        self.config["autocheck"]["test_data"] = test_flag
+        # 写回配置文件
+        self.config.write()
 
     def read_path(self, sec, opt):
+        return CUR_PATH + self.conf.get(sec, opt)
+
+    def read_data(self, opt, sec=""):
+        if sec == "":
+            sec = self.conf.get("autocheck", "test_data")
         return CUR_PATH + self.conf.get(sec, opt)
 
     def read_val(self, sec, opt):
@@ -79,14 +106,27 @@ class AutoCheck(object):
 class AdminSystem(object):
     def __init__(self):
         self.conf = ConfigParser()
+        file_name = Project().read_admin_system()
+        self.config = ConfigObj(file_name, encoding='UTF-8')
         # 读取管理后台的配置文件
-        self.conf.read(Project().read_admin_system(), encoding='UTF-8')
+        self.conf.read(file_name, encoding='UTF-8')
 
     def read_link(self):
         # 读取管理后台登录链接
         return self.conf.get("admin_system", "login")
 
+    def write_env(self, domain, test_flag):
+        self.config["admin_system"]["login"] = domain
+        self.config["admin_system"]["test_data"] = test_flag
+        # 写回配置文件
+        self.config.write()
+
     def read_path(self, sec, opt):
+        return CUR_PATH + self.conf.get(sec, opt)
+
+    def read_data(self, opt, sec=""):
+        if sec == "":
+            sec = self.conf.get("admin_system", "test_data")
         return CUR_PATH + self.conf.get(sec, opt)
 
     def read_val(self, sec, opt):
@@ -96,14 +136,27 @@ class AdminSystem(object):
 class Merchant(object):
     def __init__(self):
         self.conf = ConfigParser()
+        file_name = Project().read_merchant()
+        self.config = ConfigObj(file_name, encoding='UTF-8')
         # 读取管理后台的配置文件
-        self.conf.read(Project().read_merchant(), encoding='UTF-8')
+        self.conf.read(file_name, encoding='UTF-8')
 
     def read_link(self):
         # 读取账户后台登录链接
         return self.conf.get("merchant", "login")
 
+    def write_env(self, domain, test_flag):
+        self.config["merchant"]["login"] = domain
+        self.config["merchant"]["test_data"] = test_flag
+        # 写回配置文件
+        self.config.write()
+
     def read_path(self, sec, opt):
+        return CUR_PATH + self.conf.get(sec, opt)
+
+    def read_data(self, opt, sec=""):
+        if sec == "":
+            sec = self.conf.get("merchant", "test_data")
         return CUR_PATH + self.conf.get(sec, opt)
 
     def read_val(self, sec, opt):
@@ -111,5 +164,4 @@ class Merchant(object):
 
 
 if __name__ == '__main__':
-    val = Gateway().read_domain("domain")
-    print(val)
+    Gateway().write_env("http://192.168.11.98:7105/PaymentGateway", "xlsx_mirror")

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 管理后台 通道管理 -> 支付方式管理 -->
+<map>
+    <!-- 查询页面 -->
+    <page pageName="query">
+		<!-- 支付名称 -->
+		<locator type="id" timeOut="5" value="pmName">PayName</locator>
+        <!-- 新增 -->
+		<locator type="xpath" timeOut="5" value="//*[@id='buttonListDiv']/span[4]/a">Create</locator>
+		<!-- 查询结果为空 -->
+        <locator type="xpath" timeOut="1"
+                 value="//*[@id='payMethodForm']/div[3]/div[2]/div[5]/span">ResNull</locator>
+	</page>
+
+    <!-- 新增页面 -->
+    <page pageName="create">
+		<!-- 文本框 -->
+		<locator type="xpath" timeOut="5"
+				 value="//*[@id='payMethodForm']/div[3]/div[3]/table/tbody/tr/td[1]">TagName</locator>
+		<locator type="xpath" timeOut="5"
+				 value="//*[@id='payMethodForm']/div[3]/div[3]/table/tbody/tr[{}]/td[2]/input">TagText</locator>
+		<!-- 支付方式 -->
+		<locator type="xpath" timeOut="5"
+                 value="//*[@id='payMethodForm']/div[3]/div[3]/table/tbody/tr[3]/td[2]/span[{}]/input">MethodBtn</locator>
+        <locator type="xpath" timeOut="5"
+                 value="//*[@id='payMethodForm']/div[3]/div[3]/table/tbody/tr[3]/td[2]/span/label">MethodName</locator>
+	</page>
+
+</map>

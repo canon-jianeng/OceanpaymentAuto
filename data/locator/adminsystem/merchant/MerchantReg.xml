@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 管理后台 账户管理 -> 账户注册 -->
+<map>
+    <!-- 注册页面 -->
+    <page pageName="register">
+		<!-- 登录账号 -->
+		<locator type="id" timeOut="5" value="maMerLgginAccount">LoginAccount</locator>
+        <!-- 登录密码 -->
+		<locator type="id" timeOut="5" value="newPass">NewPass</locator>
+		<!-- 确认密码 -->
+        <locator type="id" timeOut="5" value="renewPass">RenewPass</locator>
+        <!-- 账户名称 -->
+        <locator type="id" timeOut="5" value="merName">MerName</locator>
+        <!-- 所属行业 -->
+        <locator type="id" timeOut="5" value="busId">BusId</locator>
+        <!-- 联系人 -->
+        <locator type="id" timeOut="5" value="merLinkman">MerLinkman</locator>
+        <!-- 联系电话 -->
+        <locator type="id" timeOut="5" value="merLinkphone">MerLinkphone</locator>
+        <!-- QQ -->
+        <locator type="id" timeOut="5" value="merFax">MerFax</locator>
+        <!-- 公司网址 -->
+        <locator type="id" timeOut="5" value="merWebsite">MerWebsite</locator>
+        <!-- 邮箱地址 -->
+        <locator type="id" timeOut="5" value="merEmail">MerEmail</locator>
+        <!-- 销售人员 -->
+        <locator type="id" timeOut="5" value="merSales">MerSales</locator>
+	</page>
+
+</map>

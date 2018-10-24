@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 管理后台 支付域名管理 -> 账户域名绑定管理 -->
+<map>
+    <!-- 查询页面 -->
+    <page pageName="query">
+		<!-- 终端号 -->
+		<locator type="id" timeOut="5" value="mdGwNo">Terminal</locator>
+        <!-- 新增 -->
+		<locator type="xpath" timeOut="5" value="//*[@id='buttonListDiv']/span[5]/a">Create</locator>
+		<!-- 查询结果为空 -->
+		<locator type="xpath" timeOut="1"
+                 value="//*[@id='merDomainForm']/div[3]/div[2]/div[5]/span">ResNull</locator>
+	</page>
+
+    <!-- 新增页面 -->
+    <page pageName="create">
+		<!-- 账户 -->
+		<locator type="id" timeOut="5" value="mdMerNo">MerNo</locator>
+		<!-- 终端号 -->
+		<locator type="id" timeOut="5" value="mdGwNo">Terminal</locator>
+		<!-- 域名名称 -->
+		<locator type="id" timeOut="5" value="mdName">MdName</locator>
+        <!-- 客户端类型 -->
+		<locator type="id" timeOut="5" value="mdClientType">ClientType</locator>
+	</page>
+
+</map>

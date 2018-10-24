@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 管理后台 账户管理 - 合同信息管理 -->
+<map>
+    <!-- 查询页面 -->
+    <page pageName="query">
+		<!-- 账户 -->
+		<locator type="id" timeOut="5" value="coMerNo">MerNo</locator>
+        <!-- 新增 -->
+		<locator type="xpath" timeOut="5" value="//*[@id='buttonListDiv']/span[4]/a">Create</locator>
+        <!-- 复核 -->
+		<locator type="xpath" timeOut="5" value="//*[@id='buttonListDiv']/span[3]/a">Verify</locator>
+	</page>
+
+    <!-- 新增页面 -->
+    <page pageName="create">
+		<!-- 账户 -->
+		<locator type="id" timeOut="5" value="select2-coMerNo-container">MerNo</locator>
+		<locator type="xpath" timeOut="5" value="/html/body/span/span/span[1]/input">MerNoText</locator>
+        <locator type="id" timeOut="5" value="select2-coMerNo-results">MerNoSelect</locator>
+        <!-- 自动续约 -->
+		<locator type="id" timeOut="5" value="merAutoRenew1">AutoRenew</locator>
+        <!-- 合同类型 -->
+		<locator type="id" timeOut="5" value="coContractType">ContractType</locator>
+	</page>
+
+    <!-- 复核页面 -->
+    <page pageName="verify">
+		<!-- 复核状态 -->
+		<locator type="id" timeOut="5" value="coStatus">Status</locator>
+	</page>
+</map>

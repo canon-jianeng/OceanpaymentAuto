@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 管理后台 通道管理 -> 支付银行信息管理 -->
+<map>
+    <!-- 查询页面 -->
+    <page pageName="query">
+		<!-- 银行代码 -->
+		<locator type="id" timeOut="5" value="bankCode">BankCode</locator>
+        <!-- 新增 -->
+		<locator type="xpath" timeOut="5"
+                 value="//*[@id='buttonListDiv']/span[4]/a">Create</locator>
+		<!-- 查询结果为空 -->
+        <locator type="xpath" timeOut="1"
+                 value="//*[@id='channelForm']/div[3]/div[2]/div[5]/span">ResNull</locator>
+	</page>
+
+    <!-- 新增页面 -->
+    <page pageName="create">
+		<!-- 字段标签 -->
+		<locator type="xpath" timeOut="5"
+                 value="//*[@id='channelForm']/div[3]/div[3]/table/tbody/tr/td[1]">VarName</locator>
+		<!-- 文本框 -->
+		<locator type="xpath" timeOut="5"
+                 value="//*[@id='channelForm']/div[3]/div[3]/table/tbody/tr[{}]/td[2]/input">Text</locator>
+		<!-- 选择下拉框 -->
+		<locator type="xpath" timeOut="5"
+                 value="//*[@id='channelForm']/div[3]/div[3]/table/tbody/tr[{}]/td[2]/select">Select</locator>
+        <!-- 是否单选项 -->
+		<locator type="xpath" timeOut="5"
+                 value="//*[@id='channelForm']/div[3]/div[3]/table/tbody/tr[{}]/td[2]/input[1]">RadioYes</locator>
+		<locator type="xpath" timeOut="5"
+                 value="//*[@id='channelForm']/div[3]/div[3]/table/tbody/tr[{}]/td[2]/input[2]">RadioNo</locator>
+        <!-- 支持国家复选框 -->
+        <locator type="xpath" timeOut="5"
+                 value="//*[@id='channelForm']/div[3]/div[3]/table/tbody/tr[33]/td[2]/span/label">CheckName</locator>
+		<locator type="xpath" timeOut="5"
+                 value="//*[@id='channelForm']/div[3]/div[3]/table/tbody/tr[33]/td[2]/span[{}]/input[1]">Checkbox</locator>
+        <locator type="xpath" timeOut="5"
+                 value="//*[@id='channelForm']/div[3]/div[3]/table/tbody/tr[33]/td[2]/input[1]">Global</locator>
+	</page>
+
+</map>

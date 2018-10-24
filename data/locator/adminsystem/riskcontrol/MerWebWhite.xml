@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 管理后台 风控管理 -> 来源网址白名单管理 -->
+<map>
+    <!-- 查询页面 -->
+    <page pageName="query">
+		<!-- 终端号 -->
+		<locator type="id" timeOut="5" value="wlGwNo">Terminal</locator>
+        <!-- 新增 -->
+		<locator type="xpath" timeOut="5" value="//*[@id='buttonListDiv']/span[8]/a">Create</locator>
+        <!-- 审核 -->
+		<locator type="xpath" timeOut="5" value="//*[@id='buttonListDiv']/span[3]/a">Review</locator>
+        <!-- 复核 -->
+		<locator type="xpath" timeOut="5" value="//*[@id='buttonListDiv']/span[2]/a">Verify</locator>
+		<!-- 查询结果为空 -->
+		<locator type="xpath" timeOut="1"
+                 value="//*[@id='mwlform']/div[3]/div[2]/div[5]/span">ResNull</locator>
+	</page>
+
+    <!-- 新增页面 -->
+    <page pageName="create">
+		<!-- 账户 -->
+		<locator type="id" timeOut="5" value="wlMerNo">MerNo</locator>
+		<!-- 终端号 -->
+		<locator type="xpath" timeOut="5" value="//*[@id='wlGwNo']/input[@value='{0[0]}']">Terminal</locator>
+		<!-- 支付网址 -->
+		<locator type="id" timeOut="5" value="wlWebsit">Websit</locator>
+	</page>
+
+</map>

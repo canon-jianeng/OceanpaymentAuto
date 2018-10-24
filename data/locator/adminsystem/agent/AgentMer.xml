@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 管理后台 代理商管理 -> 代理商账户查询 -->
+<map>
+    <!-- 查询页面 -->
+    <page pageName="query">
+		<!-- 账户 -->
+		<locator type="id" timeOut="5" value="merNo">MerNo</locator>
+        <!-- 新增 -->
+		<locator type="xpath" timeOut="5" value="//*[@id='buttonListDiv']/span[4]/a">Create</locator>
+		<!-- 查询结果为空 -->
+        <locator type="xpath" timeOut="1" value="/html/body/form/div[2]/div[2]/div[5]/span">ResNull</locator>
+	</page>
+
+    <!-- 新增页面 -->
+    <page pageName="create">
+		<!-- 代理商号 -->
+		<locator type="id" timeOut="5" value="agentNo">AgentNo</locator>
+		<!-- 账户 -->
+		<locator type="id" timeOut="5" value="merNo">MerNo</locator>
+		<!-- 终端号 -->
+		<locator type="id" timeOut="5" value="gwNo">Terminal</locator>
+	</page>
+
+</map>

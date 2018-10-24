@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 管理后台 账户管理 -> 账户信息管理 -->
+<map>
+    <!-- 查询页面 -->
+    <page pageName="query">
+		<!-- 账户 -->
+		<locator type="id" timeOut="5" value="merNo">MerNo</locator>
+        <!-- 激活 -->
+		<locator type="xpath" timeOut="5" value="//*[@id='buttonListDiv']/span[10]/a">Active</locator>
+        <!-- 分配权限 -->
+		<locator type="xpath" timeOut="5" value="//*[@id='buttonListDiv']/span[3]/a">AssignLimit</locator>
+	</page>
+
+    <!-- 分配权限页面 -->
+    <page pageName="assign">
+		<!-- 全部权限复选框 -->
+		<locator type="id" timeOut="5" value="root">AllLimit</locator>
+	</page>
+
+</map>

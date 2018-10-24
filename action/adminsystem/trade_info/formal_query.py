@@ -20,10 +20,10 @@ class Action(object):
         self.driver = driver
 
     def query_pay_id(self, pay_id):
+        log.info("查询支付ID")
         Home(self.driver).formal_query()
         self.query.input_pay_id(pay_id)
         self.common.click_query()
-        log.info("查询支付ID")
 
     def get_trade_status(self, val):
         # 获取交易状态

@@ -32,4 +32,4 @@ class HomePage(basepage.Action):
 
     def click_interface(self, value):
         # 点击接口链接
-        self.click_btn(self.link, value)
+        self.click_by_name(self.link, value)

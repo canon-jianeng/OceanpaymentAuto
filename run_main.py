@@ -9,6 +9,7 @@ import os
 import sys
 import unittest
 from common.HTMLTestRunner import HTMLTestRunner
+import common.conf_utils as Cu
 from common.logger import Log
 
 # 当前脚本所在文件真实路径
@@ -65,16 +66,45 @@ def run_case(all_case, report_name="report"):
     fp.close()
 
 
+def update_env(env_val):
+    if env_val == "test":
+        Cu.AdminSystem().write_env("http://192.168.11.98:7010/AdminSystem", "xlsx_test")
+        Cu.AutoCheck().write_env("http://192.168.11.98:7016/AutoCheck", "xlsx_test")
+        Cu.Gateway().write_env("http://192.168.11.98:7105/PaymentGateway", "xlsx_test")
+        Cu.Merchant().write_env("http://192.168.11.98:7007/NewMerchantsystem", "xlsx_test")
+    elif env_val == "mirror":
+        Cu.AdminSystem().write_env("https://as.oceanpayment.com", "xlsx_mirror")
+        Cu.AutoCheck().write_env("https://aci.oceanpayment.com:2008", "xlsx_mirror")
+        Cu.Gateway().write_env("https://pg.oceanpayment.com", "xlsx_mirror")
+        Cu.Merchant().write_env("https://nm.oceanpayment.com/service/admin/login", "xlsx_mirror")
+
+
+def config_case(program, case_dir=""):
+    if program == "all":
+        case_dir = "testcase/daily"
+    elif program == "gateway":
+        case_dir = "testcase/daily/gateway/pay"
+    elif program == "autocheck":
+        case_dir = "testcase/daily/gateway/check"
+    elif program == "newmerchant":
+        case_dir = "testcase/daily/newmerchant"
+    elif program == "channel_config":
+        case_dir = "testcase/special/adminsystem/channel"
+    elif program == "channel_pay":
+        case_dir = "testcase/special/gateway/channel"
+    elif program == "terminal":
+        case_dir = "testcase/special/adminsystem/terminal"
+    return case_dir
+
+
 def main():
-    case_dir = "testcase/newmerchant"
+    # 运行环境
+    # env = "test"
+    env = sys.argv[1]
+    update_env(env)
     # 测试项目
-    # program = sys.argv[1]
-    # if program == "gateway":
-    #     case_dir = "testcase/gateway/pay"
-    # elif program == "autocheck":
-    #     case_dir = "testcase/gateway/check"
-    # elif program == "newmerchant":
-    #     case_dir = "testcase/newmerchant"
+    program = sys.argv[2]
+    case_dir = config_case(program)
     # 1、加载用例
     load_case = add_case(case_dir)
     # 2、执行用例

@@ -87,9 +87,9 @@ class HomePage(basepage.Action):
 
     def click_menu(self, val_one, val_two):
         # 进入一级菜单 - 二级菜单
-        self.click_btn(self.menu_one, val_one)
+        self.click_by_name(self.menu_one, val_one)
         time.sleep(0.5)
-        self.click_btn(self.menu_two, val_two)
+        self.click_by_name(self.menu_two, val_two)
 
 
 class Common(basepage.Action):
@@ -109,6 +109,7 @@ class Common(basepage.Action):
         self.account_name = dict_home['AccountName']
         self.quit_btn = dict_home['QuitBtn']
         self.login_name = dict_home['LoginName']
+        self.sub_res = dict_home['SubmitRes']
 
     # ----- 页面操作 ----- #
     def click_query(self):
@@ -142,3 +143,7 @@ class Common(basepage.Action):
     def get_login_flag(self):
         # 判断登录名标签是否存在
         return self.is_exist(self.login_name)
+
+    def get_sub_res(self):
+        # 提交操作结果信息
+        return self.get_text(self.sub_res)

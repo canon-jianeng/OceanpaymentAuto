@@ -5,6 +5,7 @@
 # @Link    : https://www.python.org
 # @Version : 3.6.1
 
+import time
 from pageobj.home.new_merchant import LoginPage
 from pageobj.home.new_merchant import HomePage
 from common.conf_utils import Merchant
@@ -33,6 +34,9 @@ class Home(object):
             self.login_obj.input_passwd(pwd)
             self.login_obj.input_check("")
             self.login_obj.click_login()
+            self.home_obj.select_language()
+            time.sleep(0.5)
+            self.home_obj.click_confirm()
         log.info("登录账户后台")
 
     def click_meun(self, first, second):

@@ -34,9 +34,14 @@
 		<locator type="xpath" timeOut="5" value="//*[@id='side-menu']/li/a/span">MenuOne</locator>
 		<!-- 二级菜单 -->
 		<locator type="xpath" timeOut="5" value="//*[@id='side-menu']/li/ul/li/a">MenuTwo</locator>
+		<!-- 界面语言 -->
+		<locator type="xpath" timeOut="5"
+				 value="//*[@id='page-wrapper']/div[1]/nav/ul/li[1]/a/span[1]">Language</locator>
+		<locator type="xpath" timeOut="5"
+				 value="//*[@id='page-wrapper']/div[1]/nav/ul/li[1]/ul/li[1]/a">Chinese</locator>
 		<!-- 退出登录 -->
 		<locator type="xpath" timeOut="5" value="//*[@id='page-wrapper']/div[1]/nav/ul/li[4]/a">QuitLogin</locator>
         <!-- 确认按钮 -->
-		<locator type="xpath" timeOut="5" value="/html/body/div[4]/div[7]/button[2]">QuitLogin</locator>
+		<locator type="xpath" timeOut="5" value="/html/body/div[4]/div[7]/button[2]">ConfirmBtn</locator>
 	</page>
 </map>

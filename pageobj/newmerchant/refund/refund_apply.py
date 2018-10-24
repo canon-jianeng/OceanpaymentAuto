@@ -51,7 +51,7 @@ class Query(basepage.Action):
 
     def select_reason(self, item):
         # 选择退款原因
-        self.select_combobox(self.refund_reason, item, way="text")
+        self.select_combobox(self.refund_reason, item)
 
     def input_refund_des(self, val="test"):
         # 输入退款说明
